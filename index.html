@@ -1,0 +1,1933 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>Neuroplasticity — Your Brain Is Rewiring Itself Right Now</title>
+    <meta name="description" content="A fun, practical, science-grounded introduction to neuroplasticity: what it is, why it matters, and 13 drills you can do in under two minutes — starting now." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Neuroplasticity — Your Brain Is Rewiring Itself Right Now" />
+    <meta property="og:description" content="A fun, practical, science-grounded introduction to neuroplasticity: what it is, why it matters, and 13 drills you can do in under two minutes — starting now." />
+    <meta property="og:url" content="https://t3riah.github.io/neuroplasticity/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Neuroplasticity — Your Brain Is Rewiring Itself Right Now" />
+    <meta name="twitter:description" content="A fun, practical, science-grounded introduction to neuroplasticity: what it is, why it matters, and 13 drills you can do in under two minutes — starting now." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,560;0,6..72,700;1,6..72,400;1,6..72,560&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f3f5f3;
+        --surface: #ffffff;
+        --surface-2: #e9eeea;
+        --ink: #131c22;
+        --ink-soft: #3c4a53;
+        --muted: #68787f;
+        --line: #d7ded8;
+        --teal: #0b6e6b;
+        --teal-bright: #0f8a86;
+        --teal-tint: #e2efec;
+        --amber: #b97a16;
+        --amber-tint: #f7ecd4;
+        --coral: #c24e33;
+        --coral-tint: #f9e4dd;
+        --skin: #f0c297;
+        --skin-line: #b08154;
+        --tooth: #ffffff;
+        --shadow: 0 1px 2px rgba(19, 28, 34, .06), 0 10px 30px -18px rgba(19, 28, 34, .25);
+        --hero-bg: #0d1b21;
+        --hero-ink: #eef5f2;
+        --hero-soft: #b9cec8;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark;
+          --bg: #0a1114;
+          --surface: #121c20;
+          --surface-2: #18242a;
+          --ink: #e9f0ec;
+          --ink-soft: #c2cfc9;
+          --muted: #8b9d97;
+          --line: #26343a;
+          --teal: #3ec6bb;
+          --teal-bright: #5ad8cd;
+          --teal-tint: #14302d;
+          --amber: #e0aa4e;
+          --amber-tint: #33270f;
+          --coral: #e8806a;
+          --coral-tint: #38201a;
+          --skin: #dda26e;
+          --skin-line: #8a5f36;
+          --tooth: #dfe6e4;
+          --shadow: 0 1px 2px rgba(0,0,0,.4), 0 12px 32px -18px rgba(0,0,0,.7);
+          --hero-bg: #08141a;
+          --hero-ink: #eef5f2;
+          --hero-soft: #a9c4bc;
+        }
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Public Sans", system-ui, -apple-system, sans-serif;
+        font-size: 1.0625rem;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1, h2, h3 { font-family: "Newsreader", Georgia, serif; font-weight: 560; line-height: 1.12; margin: 0; }
+      p { margin: 0; }
+      a { color: var(--teal); }
+      .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+      .wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+
+      /* ---------- sticky section nav ---------- */
+      .sitenav {
+        position: sticky; top: 0; z-index: 50;
+        background: color-mix(in srgb, var(--bg) 88%, transparent);
+        backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--line);
+      }
+      .sitenav .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 2px; padding-top: 8px; padding-bottom: 8px; }
+      .sitenav a {
+        color: var(--ink-soft); text-decoration: none; font-size: .86rem; font-weight: 600;
+        padding: 6px 10px; border-radius: 999px; white-space: nowrap;
+      }
+      .sitenav a:hover, .sitenav a:focus-visible { color: var(--teal); background: var(--teal-tint); }
+      .sitenav .brand { font-family: "Newsreader", Georgia, serif; font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-right: 6px; }
+      .sitenav .brand em { color: var(--teal); font-style: italic; }
+
+      /* ---------- hero ---------- */
+      .hero { background: var(--hero-bg); color: var(--hero-ink); position: relative; overflow: hidden; }
+      #netcanvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .55; }
+      .hero .wrap { position: relative; z-index: 2; padding-top: 76px; padding-bottom: 64px; }
+      .hero .kick { font-family: "IBM Plex Mono", monospace; font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--teal-bright); margin-bottom: 22px; }
+      .hero h1 { font-size: clamp(2.5rem, 6.4vw, 4.4rem); max-width: 15ch; letter-spacing: -.01em; }
+      .hero h1 em { font-style: italic; color: var(--teal-bright); }
+      .hero .lede { margin-top: 24px; font-size: clamp(1.08rem, 2vw, 1.3rem); line-height: 1.6; color: var(--hero-soft); max-width: 56ch; }
+      .hero .lede strong { color: var(--hero-ink); font-weight: 600; }
+      .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 9px;
+        font: inherit; font-weight: 600; font-size: .98rem;
+        padding: 13px 22px; border-radius: 999px; border: 1px solid transparent;
+        cursor: pointer; text-decoration: none; transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      }
+      .btn:active { transform: scale(.97); }
+      .btn-solid { background: var(--teal-bright); color: #06201e; }
+      .btn-solid:hover { background: var(--teal); color: #fff; }
+      .btn-ghost { background: transparent; color: var(--hero-ink); border-color: rgba(238,245,242,.35); }
+      .btn-ghost:hover { border-color: var(--teal-bright); color: var(--teal-bright); }
+      .btn-light { background: var(--teal); color: #fff; }
+      .btn-light:hover { background: var(--teal-bright); color: #06201e; }
+      .btn-outline { background: transparent; color: var(--teal); border-color: var(--teal); }
+      .btn-outline:hover { background: var(--teal-tint); }
+      .hero-stats { display: flex; flex-wrap: wrap; gap: 14px 44px; margin-top: 52px; padding-top: 28px; border-top: 1px solid rgba(238,245,242,.16); }
+      .hero-stats div { min-width: 150px; }
+      .hero-stats .num { font-family: "Newsreader", Georgia, serif; font-size: 1.9rem; font-weight: 700; color: var(--hero-ink); line-height: 1; }
+      .hero-stats .lbl { font-size: .85rem; color: var(--hero-soft); margin-top: 6px; max-width: 24ch; }
+
+      /* ---------- sections ---------- */
+      section { padding: 84px 0 8px; }
+      .sec-head { max-width: 720px; margin-bottom: 38px; }
+      .sec-num { font-family: "IBM Plex Mono", monospace; font-size: .85rem; color: var(--teal); font-weight: 600; display: block; margin-bottom: 10px; }
+      .sec-head h2 { font-size: clamp(1.9rem, 4vw, 2.7rem); letter-spacing: -.01em; }
+      .sec-head h2 em { font-style: italic; color: var(--teal); }
+      .sec-head p { margin-top: 14px; color: var(--ink-soft); font-size: 1.08rem; }
+
+      .defbox {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+        padding: 30px 32px; box-shadow: var(--shadow);
+        font-family: "Newsreader", Georgia, serif; font-size: clamp(1.3rem, 2.6vw, 1.65rem); line-height: 1.45;
+      }
+      .defbox strong { color: var(--teal); font-weight: 700; }
+      .defbox .src { display: block; margin-top: 14px; font-family: "IBM Plex Mono", monospace; font-size: .78rem; color: var(--muted); letter-spacing: .02em; }
+
+      .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+      .cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .card {
+        background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+        padding: 26px; box-shadow: var(--shadow);
+      }
+      .card h3 { font-size: 1.28rem; margin-bottom: 8px; }
+      .card p { color: var(--ink-soft); font-size: .99rem; }
+      .card .icon { width: 42px; height: 42px; color: var(--teal); margin-bottom: 14px; }
+      .card .icon svg { width: 100%; height: 100%; }
+
+      .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 22px; }
+      .step { border-top: 3px solid var(--teal); padding-top: 16px; }
+      .step .n { font-family: "IBM Plex Mono", monospace; font-size: .8rem; color: var(--teal); font-weight: 600; }
+      .step h3 { font-size: 1.2rem; margin: 6px 0 6px; }
+      .step p { color: var(--ink-soft); font-size: .97rem; }
+
+      .lever-list { display: grid; gap: 0; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--surface); box-shadow: var(--shadow); }
+      .lever { display: grid; grid-template-columns: 56px 1fr 2fr; gap: 18px; align-items: baseline; padding: 20px 26px; border-bottom: 1px solid var(--line); }
+      .lever:last-child { border-bottom: 0; }
+      .lever .ln { font-family: "IBM Plex Mono", monospace; font-weight: 600; color: var(--teal); font-size: 1.05rem; }
+      .lever h3 { font-size: 1.22rem; }
+      .lever p { color: var(--ink-soft); font-size: .98rem; }
+
+      .tag {
+        display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: .7rem; font-weight: 600;
+        letter-spacing: .05em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; vertical-align: middle;
+      }
+      .tag-solid { background: var(--teal-tint); color: var(--teal); }
+      .tag-growing { background: var(--amber-tint); color: var(--amber); }
+
+      /* ---------- fixed vs trainable ---------- */
+      .seg { display: inline-flex; background: var(--surface-2); border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 4px; }
+      .seg button {
+        font: inherit; font-weight: 600; font-size: .95rem; border: 0; cursor: pointer;
+        padding: 9px 20px; border-radius: 999px; background: transparent; color: var(--ink-soft);
+      }
+      .seg button.on { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
+      .vs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px; }
+      .vs-panel { border-radius: 16px; border: 1px solid var(--line); padding: 28px; background: var(--surface); }
+      .vs-panel h3 { font-size: 1.35rem; margin-bottom: 14px; }
+      .vs-panel ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+      .vs-panel li { display: flex; gap: 11px; color: var(--ink-soft); font-size: .99rem; align-items: flex-start; }
+      .vs-panel li svg { flex: 0 0 20px; width: 20px; height: 20px; margin-top: 3px; }
+      .vs-fixed { opacity: .82; }
+      .vs-fixed li svg { color: var(--coral); }
+      .vs-trainable { border-color: var(--teal); box-shadow: 0 0 0 1px var(--teal), var(--shadow); }
+      .vs-trainable li svg { color: var(--teal); }
+      .vs-note { margin-top: 18px; color: var(--muted); font-size: .93rem; }
+
+      .tracebox { margin-top: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 26px; box-shadow: var(--shadow); }
+      .tracebox h3 { font-size: 1.3rem; margin-bottom: 6px; }
+      .tracebox > p { color: var(--ink-soft); font-size: .98rem; max-width: 62ch; }
+      .trace-stage { margin-top: 18px; }
+      .trace-stage svg { width: 100%; height: auto; display: block; }
+      .trace-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 26px; margin-top: 16px; }
+      .trace-meta .stat { font-family: "IBM Plex Mono", monospace; font-size: .9rem; color: var(--ink-soft); }
+      .trace-meta .stat b { color: var(--teal); font-size: 1.1rem; }
+      #trace-msg { color: var(--ink-soft); font-size: .95rem; font-style: italic; font-family: "Newsreader", Georgia, serif; font-size: 1.05rem; }
+
+      /* ---------- exercises ---------- */
+      .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 24px; }
+      .chip {
+        font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer;
+        padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line);
+        background: var(--surface); color: var(--ink-soft);
+      }
+      .chip:hover { border-color: var(--teal); color: var(--teal); }
+      .chip.on { background: var(--teal); border-color: var(--teal); color: #fff; }
+      .toolbar .spacer { flex: 1; }
+      .repcount { font-family: "IBM Plex Mono", monospace; font-size: .88rem; color: var(--ink-soft); }
+      .repcount b { color: var(--teal); font-size: 1.05rem; }
+      .ex-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .ex-card { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; box-shadow: var(--shadow); transition: box-shadow .3s ease, border-color .3s ease; }
+      .ex-card.flash { border-color: var(--teal); box-shadow: 0 0 0 2px var(--teal), var(--shadow); }
+      .ex-card.hidden { display: none; }
+      .ex-top { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+      .ex-cat { font-family: "IBM Plex Mono", monospace; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--teal); background: var(--teal-tint); padding: 4px 9px; border-radius: 999px; }
+      .ex-time { margin-left: auto; font-family: "IBM Plex Mono", monospace; font-size: .82rem; color: var(--muted); white-space: nowrap; }
+      .ex-card h3 { font-size: 1.3rem; margin-bottom: 8px; }
+      .ex-how { color: var(--ink-soft); font-size: .97rem; }
+      .ex-how ol, .ex-how ul { margin: 6px 0 0; padding-left: 20px; display: grid; gap: 4px; }
+      .ex-why { margin-top: 14px; padding-top: 13px; border-top: 1px dashed var(--line); font-size: .92rem; color: var(--ink-soft); }
+      .ex-why b { color: var(--ink); font-weight: 600; }
+      .ex-foot { margin-top: auto; padding-top: 16px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+      .trains { font-size: .85rem; color: var(--muted); }
+      .trains b { color: var(--ink-soft); font-weight: 600; }
+      .timerbtn {
+        font: inherit; font-size: .88rem; font-weight: 600; cursor: pointer;
+        display: inline-flex; align-items: center; gap: 8px;
+        padding: 8px 14px; border-radius: 999px; border: 1px solid var(--teal); color: var(--teal); background: transparent;
+      }
+      .timerbtn:hover { background: var(--teal-tint); }
+      .timerbtn .ring { width: 18px; height: 18px; transform: rotate(-90deg); }
+      .timerbtn .ring circle { fill: none; stroke-width: 3; }
+      .timerbtn .ring .track { stroke: var(--line); }
+      .timerbtn .ring .prog { stroke: var(--teal); stroke-linecap: round; }
+      .timerbtn.done { background: var(--teal); color: #fff; border-color: var(--teal); }
+
+      /* ---------- hand demos ---------- */
+      .ex-demo { position: relative; background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 10px 8px; margin-bottom: 16px; }
+      .ex-demo svg { width: 100%; height: auto; display: block; }
+      .demo-cap { font-size: .8rem; color: var(--muted); text-align: center; margin-top: 6px; line-height: 1.45; }
+      .demo-btn {
+        position: absolute; top: 8px; right: 8px; width: 30px; height: 30px; border-radius: 50%;
+        border: 1px solid var(--line); background: var(--surface); color: var(--ink-soft);
+        cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0;
+      }
+      .demo-btn:hover { color: var(--teal); border-color: var(--teal); }
+      .demo-btn svg { width: 12px; height: 12px; }
+      .handshape { fill: var(--skin); stroke: var(--skin-line); stroke-width: 2; stroke-linejoin: round; }
+      .nail { fill: rgba(255,255,255,.45); }
+      .digit { transition: transform .45s cubic-bezier(.45,.05,.35,1); transform-box: fill-box; }
+      .digit.d-thumb { transform: rotate(-32deg); }
+      .contact-ring { fill: none; stroke: var(--amber); stroke-width: 3; opacity: 0; pointer-events: none; }
+      .contact-ring.pulse { animation: ringpulse .55s ease-out; }
+      @keyframes ringpulse { 0% { opacity: .95; } 100% { opacity: 0; } }
+      .scrub { animation: scrub .3s ease-in-out infinite alternate; }
+      @keyframes scrub { from { transform: translateX(-9px); } to { transform: translateX(9px); } }
+      .demo-off .scrub { animation-play-state: paused; }
+      .obj-shape { fill: none; stroke: var(--muted); stroke-width: 2.5; stroke-linejoin: round; transition: stroke .3s ease; }
+      .obj-shape.touched { stroke: var(--teal); }
+      .lchip rect { fill: var(--surface-2); stroke: var(--line); stroke-width: 2; transition: fill .25s ease, stroke .25s ease; }
+      .lchip text { font-family: "IBM Plex Mono", monospace; font-size: 17px; font-weight: 600; fill: var(--ink); }
+      .lchip.on rect { fill: var(--teal); stroke: var(--teal); }
+      .lchip.on text { fill: #fff; }
+      .catchip rect { fill: var(--surface); stroke: var(--line); stroke-width: 2; transition: fill .25s ease, stroke .25s ease; }
+      .catchip text { font-family: "Public Sans", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: .07em; fill: var(--ink-soft); }
+      .catchip.on rect { fill: var(--teal-tint); stroke: var(--teal); }
+      .catchip.on text { fill: var(--teal); }
+      .bob { transform-box: fill-box; transform-origin: 50% 100%; animation: bob 1.5s ease-in-out infinite alternate; }
+      @keyframes bob { from { transform: rotate(-2.5deg) translateY(0); } to { transform: rotate(2.5deg) translateY(-5px); } }
+      .edot { animation: edot 1.2s ease-in-out infinite; }
+      @keyframes edot { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+      .demo-off .bob, .demo-off .edot { animation-play-state: paused; }
+
+      /* ---------- experiments ---------- */
+      .widget { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 28px; box-shadow: var(--shadow); margin-bottom: 22px; }
+      .widget-head { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: baseline; margin-bottom: 8px; }
+      .widget-head h3 { font-size: 1.5rem; }
+      .widget-head .wtag { font-family: "IBM Plex Mono", monospace; font-size: .78rem; color: var(--muted); }
+      .widget > p { color: var(--ink-soft); max-width: 68ch; }
+      .widget .readout { font-family: "IBM Plex Mono", monospace; font-size: .92rem; color: var(--ink-soft); margin-top: 14px; min-height: 1.5em; }
+      .widget .readout b { color: var(--teal); }
+      .pads { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 20px; }
+      .pad {
+        font: inherit; cursor: pointer; border: 2px solid var(--line); background: var(--surface-2);
+        border-radius: 14px; padding: 18px 6px 14px; text-align: center; color: var(--ink);
+        transition: background .12s ease, border-color .12s ease, transform .12s ease;
+      }
+      .pad .fname { display: block; font-weight: 700; font-size: .95rem; }
+      .pad .fnum { display: block; font-family: "IBM Plex Mono", monospace; font-size: .72rem; color: var(--muted); margin-top: 3px; }
+      .pad.lit { background: var(--teal); border-color: var(--teal); color: #fff; }
+      .pad.lit .fnum { color: rgba(255,255,255,.75); }
+      .pad.good { border-color: var(--teal); background: var(--teal-tint); }
+      .pad.bad { border-color: var(--coral); background: var(--coral-tint); }
+      .pad:disabled { cursor: default; opacity: .85; }
+      .widget-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; align-items: center; }
+      .seq-progress { display: flex; gap: 6px; margin-top: 16px; flex-wrap: wrap; }
+      .seq-progress span { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--line); }
+      .seq-progress span.hit { background: var(--teal); border-color: var(--teal); }
+      .seq-progress span.miss { background: var(--coral); border-color: var(--coral); }
+
+      .stroop-word { font-family: "Newsreader", Georgia, serif; font-weight: 700; font-size: clamp(2.6rem, 8vw, 4rem); text-align: center; padding: 26px 0 8px; letter-spacing: .04em; min-height: 1.3em; }
+      .stroop-btns { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; max-width: 560px; margin: 10px auto 0; }
+      .stroop-btns button {
+        font: inherit; font-weight: 700; font-size: .95rem; cursor: pointer; padding: 13px 6px;
+        border-radius: 12px; border: 2px solid var(--line); background: var(--surface-2); color: var(--ink);
+      }
+      .stroop-btns button:hover { border-color: var(--ink-soft); }
+      .c-red { color: #c93a2e; } .c-blue { color: #2266c9; } .c-green { color: #1e8a4c; } .c-amber { color: #c07f10; }
+
+      .alpha-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin-top: 18px; max-width: 620px; }
+      .alpha-grid button {
+        font-family: "IBM Plex Mono", monospace; font-weight: 600; font-size: 1.05rem; cursor: pointer;
+        padding: 12px 0; border-radius: 10px; border: 2px solid var(--line); background: var(--surface-2); color: var(--ink);
+      }
+      .alpha-grid button.got { background: var(--teal); border-color: var(--teal); color: #fff; }
+      .alpha-grid button.wrong { border-color: var(--coral); background: var(--coral-tint); }
+      .alpha-next { font-family: "Newsreader", Georgia, serif; font-size: 1.25rem; margin-top: 16px; }
+      .alpha-next b { color: var(--teal); font-size: 1.6rem; }
+
+      /* ---------- videos ---------- */
+      .vid-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+      .vid-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+      .vid-frame { position: relative; background: #0d1b21; aspect-ratio: 16 / 9; }
+      .vid-frame.tall { aspect-ratio: auto; height: 480px; max-height: 70vh; }
+      .vid-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+      .vid-frame .skeleton { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #7d968e; font-family: "IBM Plex Mono", monospace; font-size: .8rem; letter-spacing: .08em; }
+      .vid-body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
+      .vid-body h3 { font-size: 1.22rem; line-height: 1.3; }
+      .vid-creator { font-family: "IBM Plex Mono", monospace; font-size: .8rem; color: var(--teal); font-weight: 600; }
+      .vid-body p { color: var(--ink-soft); font-size: .95rem; flex: 1; }
+      .vid-link { font-size: .9rem; font-weight: 600; text-decoration: none; }
+      .vid-link:hover { text-decoration: underline; }
+
+      /* ---------- science ---------- */
+      .sci-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+      .sci-panel { border-radius: 16px; padding: 28px; border: 1px solid var(--line); background: var(--surface); }
+      .sci-panel.solid { border-top: 4px solid var(--teal); }
+      .sci-panel.emerging { border-top: 4px solid var(--amber); }
+      .sci-panel h3 { font-size: 1.35rem; margin-bottom: 14px; }
+      .sci-panel ul { margin: 0; padding-left: 20px; display: grid; gap: 11px; color: var(--ink-soft); font-size: .97rem; }
+      .sci-panel li b { color: var(--ink); }
+
+      /* ---------- plan + cta ---------- */
+      .plan { display: grid; gap: 0; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--surface); box-shadow: var(--shadow); }
+      .plan-row { display: grid; grid-template-columns: 92px 1fr; gap: 18px; padding: 18px 26px; border-bottom: 1px solid var(--line); align-items: baseline; }
+      .plan-row:last-child { border-bottom: 0; }
+      .plan-row .day { font-family: "IBM Plex Mono", monospace; font-weight: 600; color: var(--teal); font-size: .9rem; }
+      .plan-row p { color: var(--ink-soft); font-size: .98rem; }
+      .plan-row p b { color: var(--ink); }
+      .cta-band { margin-top: 84px; background: var(--hero-bg); color: var(--hero-ink); border-radius: 22px; padding: 52px 40px; text-align: left; position: relative; overflow: hidden; }
+      .cta-band h2 { font-size: clamp(1.9rem, 4.4vw, 2.9rem); max-width: 22ch; }
+      .cta-band h2 em { font-style: italic; color: var(--teal-bright); }
+      .cta-band p { margin-top: 16px; color: var(--hero-soft); max-width: 58ch; font-size: 1.08rem; }
+      footer { padding: 56px 0 64px; color: var(--muted); font-size: .9rem; }
+      footer .refs { display: grid; gap: 6px; margin-top: 10px; }
+      footer h3 { color: var(--ink); font-size: 1.05rem; font-family: "Public Sans", sans-serif; font-weight: 700; margin-bottom: 4px; }
+      .disclaimer { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line); max-width: 75ch; }
+
+      @media (max-width: 900px) {
+        .cols-3, .ex-grid { grid-template-columns: 1fr 1fr; }
+        .steps { grid-template-columns: 1fr; }
+        .lever { grid-template-columns: 40px 1fr; }
+        .lever p { grid-column: 2; }
+      }
+      @media (max-width: 640px) {
+        section { padding-top: 60px; }
+        .cols-2, .cols-3, .ex-grid, .vs-grid, .vid-grid, .sci-grid { grid-template-columns: 1fr; }
+        .pads { grid-template-columns: repeat(5, 1fr); gap: 6px; }
+        .pad { padding: 12px 2px 10px; }
+        .pad .fname { font-size: .78rem; }
+        .stroop-btns { grid-template-columns: repeat(2, 1fr); }
+        .alpha-grid { grid-template-columns: repeat(5, 1fr); }
+        .plan-row { grid-template-columns: 1fr; gap: 4px; }
+        .hero .wrap { padding-top: 52px; }
+        .cta-band { padding: 38px 24px; }
+        .defbox, .card, .widget { padding: 22px; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        #netcanvas { display: none; }
+        * { transition: none !important; animation: none !important; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="sitenav" aria-label="Sections">
+      <div class="wrap">
+        <a class="brand" href="#top">Neuro<em>plasticity</em></a>
+        <a href="#what">What it is</a>
+        <a href="#levers">The 5 levers</a>
+        <a href="#why">Why it matters</a>
+        <a href="#fixed">Fixed vs trainable</a>
+        <a href="#try">Try it now</a>
+        <a href="#see">See it yourself</a>
+        <a href="#watch">Watch &amp; do</a>
+        <a href="#science">The honest science</a>
+        <a href="#start">Your first week</a>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <canvas id="netcanvas" aria-hidden="true"></canvas>
+      <div class="wrap">
+        <p class="kick">The brain you have is not the brain you're stuck with</p>
+        <h1>Your brain rewired itself <em>today.</em> Tomorrow, you get a say in how.</h1>
+        <p class="lede">Every time you learned a shortcut, remembered a name, or got slightly better at anything, your brain physically changed — growing new connections, strengthening some, letting others fade. That process has a name: <strong>neuroplasticity</strong>. It's not a talent or a treatment. It's the default setting of being human, it runs at every age, and you can steer it with drills that take less time than reading this page.</p>
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#try">Start a 2-minute drill
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#see">Feel it happen in 60 seconds</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="num">~86 billion</div>
+            <div class="lbl">neurons in the average adult brain, linked by roughly 100 trillion connections</div>
+          </div>
+          <div>
+            <div class="num">Every age</div>
+            <div class="lbl">plasticity continues across the whole lifespan — slower than in childhood, never off</div>
+          </div>
+          <div>
+            <div class="num">2 minutes</div>
+            <div class="lbl">is enough for a real training rep. Small and repeated beats big and rare</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 01 WHAT IT IS -->
+      <section id="what">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-num">01 — What it is</span>
+            <h2>A brain that edits itself</h2>
+          </div>
+          <div class="defbox">
+            <strong>Neuroplasticity</strong> is your brain's ability to change its own wiring in response to experience — strengthening the connections you use, building new ones, and quietly pruning the ones you don't.
+            <span class="src">“NEURO” = NERVE CELLS&nbsp;&nbsp;·&nbsp;&nbsp;“PLASTIC” = MOLDABLE, CHANGEABLE</span>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <span class="n">STEP 1</span>
+              <h3>Neurons that fire together, wire together</h3>
+              <p>When two neurons activate at the same time — say, the ones for hearing a Spanish word and the ones for its meaning — the connection between them gets stronger. Psychologist Donald Hebb described this in 1949; it's still the field's working rule.</p>
+            </div>
+            <div class="step">
+              <span class="n">STEP 2</span>
+              <h3>Repetition paves the path</h3>
+              <p>Repeat an action and the pathway gets coated in myelin, a fatty insulation that lets signals travel faster and more reliably. Awkward effort becomes smooth skill — that's not a metaphor, it's insulation being laid down.</p>
+            </div>
+            <div class="step">
+              <span class="n">STEP 3</span>
+              <h3>Unused paths fade</h3>
+              <p>Connections you stop using are weakened and eventually pruned away. This is a feature, not a bug: it's how the brain frees up resources — and how old habits genuinely lose their grip when you stop feeding them.</p>
+            </div>
+          </div>
+          <div class="cols-2" style="margin-top:22px">
+            <div class="card">
+              <h3>The old idea: fixed by adulthood</h3>
+              <p>For most of the 20th century, textbooks taught that the adult brain was essentially hardwired — you got your neurons early, and decline was the only direction. That view has been overturned. Adult brains form new connections throughout life, and in the hippocampus — a memory hub — evidence suggests new neurons can keep appearing into old age.</p>
+            </div>
+            <div class="card">
+              <h3>The current picture: dynamic, always</h3>
+              <p>Your brain is better compared to a city than a machine: roads get widened where traffic flows, new shortcuts open, neglected streets close. What you repeatedly do, attend to, and feel literally shapes the map. The rest of this page is about becoming a better city planner.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 LEVERS -->
+      <section id="levers">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-num">02 — How change actually happens</span>
+            <h2>Five levers that tell your brain <em>“this matters — rewire for it”</em></h2>
+            <p>Plasticity isn't random. Research on learning and rehabilitation keeps pointing to the same five ingredients. Every drill on this page is built from them.</p>
+          </div>
+          <div class="lever-list">
+            <div class="lever">
+              <span class="ln">L1</span>
+              <h3>Attention</h3>
+              <p>Focused attention releases neuromodulators (notably acetylcholine) that flag active circuits for change. Half-attention produces half-plasticity — which is why drills below ask for your full focus for just a minute or two.</p>
+            </div>
+            <div class="lever">
+              <span class="ln">L2</span>
+              <h3>Repetition</h3>
+              <p>One attempt signals; many attempts build. Stroke rehabilitation — the most demanding test of adult plasticity — is built on hundreds of task repetitions, and the same dose-response shows up in ordinary skill learning.</p>
+            </div>
+            <div class="lever">
+              <span class="ln">L3</span>
+              <h3>Novelty &amp; challenge</h3>
+              <p>The brain rewires most when a task sits just past comfortable — new, slightly too hard, demanding adjustment. Once a drill becomes automatic, it's maintenance, not growth. That's your cue to make it harder.</p>
+            </div>
+            <div class="lever">
+              <span class="ln">L4</span>
+              <h3>Sleep &amp; rest</h3>
+              <p>Much of the actual consolidation — stabilizing the day's rewiring — happens during sleep. Short version: practice tells the brain what to change; sleep does a large share of the building work.</p>
+            </div>
+            <div class="lever">
+              <span class="ln">L5</span>
+              <h3>Reward &amp; emotion</h3>
+              <p>Dopamine marks experiences as worth keeping. Genuine interest, small wins, and noticing your own progress aren't fluff — they're chemical instructions to consolidate. This is why the drills here are designed to be visibly winnable.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 WHY IT MATTERS -->
+      <section id="why">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-num">03 — Why it matters</span>
+            <h2>Not trivia. Leverage over your own life.</h2>
+            <p>Plasticity is the mechanism underneath almost every change you've ever made — or failed to make. Understanding it turns “that's just how I am” into a set of dials you can actually turn.</p>
+          </div>
+          <div class="cols-3">
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2z"/></svg></div>
+              <h3>Learn anything faster</h3>
+              <p>Focus, reps, sleep, reward — the levers above are a recipe for acquiring languages, instruments, and job skills at any age. London taxi drivers who memorized 25,000 streets measurably grew the part of the hippocampus used for spatial memory. <span class="tag tag-solid">Well established</span></p>
+            </div>
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.6-6.3"/><path d="M21 3v6h-6"/></svg></div>
+              <h3>Break habits that own you</h3>
+              <p>A habit is a well-paved neural road. You rarely delete one — you out-build it: practice a competing response until the new road is easier to travel, and starve the old one of repetitions. That's the working principle behind habit-reversal training and much of CBT. <span class="tag tag-solid">Well established</span></p>
+            </div>
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c-4.5-3.2-8-6.6-8-10.4C4 7.2 6.4 5 9 5c1.3 0 2.4.6 3 1.4C12.6 5.6 13.7 5 15 5c2.6 0 5 2.2 5 5.6 0 3.8-3.5 7.2-8 10.4z"/></svg></div>
+              <h3>Resilience under stress</h3>
+              <p>Therapies that work — exposure therapy, CBT, mindfulness training — work largely <em>by</em> plasticity: repeated new experiences teach threat and rumination circuits a different response. Resilience isn't a trait you're issued; it's circuitry that can be trained. <span class="tag tag-solid">Well established</span></p>
+            </div>
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+              <h3>Aging on your own terms</h3>
+              <p>Lifelong learning, physical exercise, and rich social lives are consistently linked with slower cognitive decline — the “cognitive reserve” idea. Plasticity doesn't stop aging, but an actively rewiring brain appears to weather it better. <span class="tag tag-solid">Well established</span></p>
+            </div>
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.8v3M12 18.2v3M2.8 12h3M18.2 12h3M5.5 5.5l2.1 2.1M16.4 16.4l2.1 2.1M18.5 5.5l-2.1 2.1M7.6 16.4l-2.1 2.1"/></svg></div>
+              <h3>Recovery after injury</h3>
+              <p>After a stroke, surviving brain regions can take over lost functions — but mainly when driven by intensive, repetitive, task-specific practice. Modern stroke rehab is applied neuroplasticity, and it's one of the clearest proofs the adult brain can reorganize. <span class="tag tag-solid">Well established</span></p>
+            </div>
+            <div class="card">
+              <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.2 1.3 2.2h4.6c.2-1 .6-1.6 1.3-2.2A6 6 0 0 0 12 3z"/></svg></div>
+              <h3>Creativity on demand</h3>
+              <p>New ideas are, mechanically, new combinations — connections between circuits that don't usually talk. Varied inputs, cross-training between unlike skills, and deliberate novelty give the brain more raw material to connect. <span class="tag tag-growing">Growing evidence</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 FIXED VS TRAINABLE -->
+      <section id="fixed">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-num">04 — The transformation</span>
+            <h2>Two stories about your brain. Only one is true.</h2>
+            <p>Toggle between them. The “fixed” column is what most of us absorbed growing up — and it's the story the evidence retired.</p>
+          </div>
+          <div class="seg" role="tablist" aria-label="Brain story">
+            <button id="seg-fixed" class="on" role="tab" aria-selected="true">The fixed-brain story</button>
+            <button id="seg-train" role="tab" aria-selected="false">The trainable-brain story</button>
+          </div>
+          <div class="vs-grid">
+            <div class="vs-panel vs-fixed" id="panel-fixed">
+              <h3>“My brain is what it is.”</h3>
+              <ul>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>“I'm just not a math person / language person / morning person.”</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Bad habits are character flaws to feel guilty about, forever.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>After about age 25, the hardware is set and decline is the plan.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>If it doesn't come easily, it isn't “for you.”</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Effort is evidence of low talent.</li>
+              </ul>
+            </div>
+            <div class="vs-panel vs-trainable" id="panel-train" hidden>
+              <h3>“My brain is under construction — and I'm the crew.”</h3>
+              <ul>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Ability is mostly accumulated wiring. Wiring can be built, at any age.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>A habit is a road, not a verdict — and roads can be out-built and left to fade.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Plasticity slows with age but never switches off; adults trade speed for strategy.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Struggle at the start isn't a warning sign — it's the sensation of new wiring being laid.</li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Effort, aimed well and repeated, <em>is</em> the mechanism of talent.</li>
+              </ul>
+            </div>
+          </div>
+          <p class="vs-note">Neither story changes your brain by itself. But the second one is the accurate one — and people who believe improvement is possible practice more, which makes it true in practice as well.</p>
+
+          <div class="tracebox">
+            <h3>Try the core idea with your cursor: repetition paves the path</h3>
+            <p>Press the button to send a signal down the pathway. Each rep makes the connection a little thicker and the signal a little quicker — a miniature of what practice does to a real circuit over days and weeks.</p>
+            <div class="trace-stage">
+              <svg viewBox="0 0 720 190" role="img" aria-label="Diagram of a signal traveling along a pathway that grows stronger with each repetition">
+                <path id="trace-ghost" d="M60 95 C 200 20, 300 170, 420 95 S 620 30, 665 95" fill="none" stroke="var(--line)" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round"/>
+                <path id="trace-path" d="M60 95 C 200 20, 300 170, 420 95 S 620 30, 665 95" fill="none" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="60" cy="95" r="17" fill="var(--surface)" stroke="var(--teal)" stroke-width="2.5"/>
+                <circle cx="60" cy="95" r="5.5" fill="var(--teal)"/>
+                <circle cx="665" cy="95" r="17" fill="var(--surface)" stroke="var(--teal)" stroke-width="2.5"/>
+                <circle cx="665" cy="95" r="5.5" fill="var(--teal)"/>
+                <circle id="trace-pulse" cx="60" cy="95" r="8" fill="var(--amber)" opacity="0"/>
+              </svg>
+            </div>
+            <div class="trace-meta">
+              <button class="btn btn-light" id="trace-btn" type="button">Send a signal — do a rep</button>
+              <span class="stat">Reps: <b id="trace-reps">0</b></span>
+              <span class="stat">Signal trip: <b id="trace-speed">1.40s</b></span>
+              <span id="trace-msg" aria-live="polite">First reps feel slow and effortful. That's normal — the path is still dirt.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 TRY IT NOW -->
+      <section id="try">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-num">05 — Try it now</span>
+            <h2>Thirteen drills, each two minutes or less. <em>Pick one and start the timer.</em></h2>
+            <p>No equipment, no app, no “right time.” Each card tells you exactly what to do, why it works, and what it trains. Every card carries a short looping animation, so you can watch the move before you try it. Finishing a timer logs a rep — stack reps across the day and you've started rewiring on purpose.</p>
+          </div>
+          <div class="toolbar" role="group" aria-label="Filter exercises">
+            <button class="chip on" data-filter="all" type="button">All 13</button>
+            <button class="chip" data-filter="hands" type="button">Hands &amp; fingers</button>
+            <button class="chip" data-filter="otherhand" type="button">Other hand</button>
+            <button class="chip" data-filter="senses" type="button">Senses</button>
+            <button class="chip" data-filter="attention" type="button">Attention</button>
+            <button class="chip" data-filter="pattern" type="button">Pattern breaks</button>
+            <button class="chip" data-filter="habits" type="button">Micro-habits</button>
+            <span class="spacer"></span>
+            <span class="repcount">Reps this visit: <b id="rep-total">0</b></span>
+            <button class="chip" id="shuffle-btn" type="button">Surprise me</button>
+          </div>
+          <div class="ex-grid" id="ex-grid">
+
+            <article class="ex-card" data-cat="hands">
+              <div class="ex-top"><span class="ex-cat">Hands &amp; fingers</span><span class="ex-time">60 sec</span></div>
+              <h3>The Finger Ladder</h3>
+              <div class="ex-demo" data-demo="ladder">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">The loop: thumb meets index → middle → ring → pinky, then reverses back down.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Touch your thumb to each fingertip in order: index, middle, ring, pinky.</li>
+                  <li>Reverse back down. That's one ladder.</li>
+                  <li>Repeat, a little faster each round, both hands together.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> Your hands claim an outsized share of the motor cortex. Sequenced, speeding finger movements force that circuitry to plan, time, and correct — exactly the demand that drives motor plasticity.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>coordination · motor control</b></span><button class="timerbtn" data-seconds="60" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="hands">
+              <div class="ex-top"><span class="ex-cat">Hands &amp; fingers</span><span class="ex-time">60 sec</span></div>
+              <h3>Thumb–Pinky Switch</h3>
+              <div class="ex-demo" data-demo="switch">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">Opposite digits at the same moment — one hand shows the thumb, the other the pinky. Then swap.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Hold both hands up. Left hand: only thumb extended. Right hand: only pinky extended.</li>
+                  <li>Now switch — left pinky, right thumb. Back and forth.</li>
+                  <li>Start slow. It will tangle. Speed up only when it untangles.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> The two hands must run opposite programs at once, so the hemispheres have to coordinate through the corpus callosum while you suppress the urge to mirror. The tangle <em>is</em> the training.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>bilateral coordination · focus</b></span><button class="timerbtn" data-seconds="60" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="hands">
+              <div class="ex-top"><span class="ex-cat">Hands &amp; fingers</span><span class="ex-time">90 sec</span></div>
+              <h3>One-Finger Lifts</h3>
+              <div class="ex-demo" data-demo="lifts">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">Palm flat on the table. One finger lifts at a time — hold it, lower it, next.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Place one palm flat on a table, fingers spread.</li>
+                  <li>Lift only the pinky. Hold 2 seconds. Down.</li>
+                  <li>Work through each finger — then repeat with the other hand.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> Fingers share muscles and tendons, so isolating one — especially the pinky and ring finger — demands precise, fractionated motor commands. Fine control like this is a staple of hand rehabilitation for a reason.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>finger independence · fine motor</b></span><button class="timerbtn" data-seconds="90" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="otherhand">
+              <div class="ex-top"><span class="ex-cat">Other hand</span><span class="ex-time">2 min</span></div>
+              <h3>Wrong-Hand Everything</h3>
+              <div class="ex-demo" data-demo="brush">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">Your usual routine, run by the other hand. Slower and wobblier is the point.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Pick one routine task: brushing teeth, using your mouse, unlocking your phone.</li>
+                  <li>Do the whole thing with your non-dominant hand.</li>
+                  <li>Notice every micro-correction. That noticing is the work.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> Your dominant hand runs on autopilot circuits. Switching hands hands the job to the opposite hemisphere's motor cortex and forces conscious control back online — a small, safe dose of the “beginner brain.”</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>adaptability · motor learning</b></span><button class="timerbtn" data-seconds="120" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="otherhand">
+              <div class="ex-top"><span class="ex-cat">Other hand</span><span class="ex-time">90 sec</span></div>
+              <h3>Mirror Writing</h3>
+              <div class="ex-demo" data-demo="writing">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">Non-dominant hand, slow strokes. Legible beats pretty — wobbles included.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Write your name and today's date with your non-dominant hand.</li>
+                  <li>Slow down until the letters are legible, not pretty.</li>
+                  <li>Sign your name like it's a legal document. Compare with last time.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> Writing is a stored motor program. Running it through the untrained hand forces the brain to rebuild the program step by step — the felt awkwardness is new circuitry being drafted in real time.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>motor planning · patience</b></span><button class="timerbtn" data-seconds="90" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="senses">
+              <div class="ex-top"><span class="ex-cat">Senses</span><span class="ex-time">90 sec</span></div>
+              <h3>Eyes-Closed Explorer</h3>
+              <div class="ex-demo" data-demo="explorer">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">Eyes closed, fingertips do the reading: edges, corners, curves — name it last.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Sit somewhere safe. Close your eyes.</li>
+                  <li>Pick up five familiar objects one at a time. Identify each by touch alone — texture, weight, temperature.</li>
+                  <li>Then “draw” each object's shape in the air from feel.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> Vision normally dominates so completely that touch circuits idle. Remove vision and somatosensory areas ramp up — the same cross-sensory flexibility that lets Braille readers recruit visual cortex for touch.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>tactile acuity · sensory flexibility</b></span><button class="timerbtn" data-seconds="90" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="senses">
+              <div class="ex-top"><span class="ex-cat">Senses</span><span class="ex-time">60 sec</span></div>
+              <h3>The Sound Hunt</h3>
+              <div class="ex-demo" data-demo="sound">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">Tally each new sound on a finger — hum, bird, traffic — until one hand is full.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Stop. Set the timer. Close your eyes if you like.</li>
+                  <li>Count every distinct sound you can identify — hums, birds, traffic, your own breathing.</li>
+                  <li>Rank them nearest to farthest. Most people find sounds they walk past daily.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> Auditory attention is a spotlight you can aim. Deliberately widening it trains the same selective-attention networks used to follow one voice in a noisy room — and to notice what your routine filters out.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>listening · selective attention</b></span><button class="timerbtn" data-seconds="60" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="attention">
+              <div class="ex-top"><span class="ex-cat">Attention</span><span class="ex-time">60 sec</span></div>
+              <h3>Stroop Sprint</h3>
+              <div class="ex-demo" data-demo="tapcolors">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">The hand taps the ink colour, never the word. Watch it ignore what the word says.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Scroll to the Stroop test in “See it for yourself” below.</li>
+                  <li>Name the <em>ink color</em>, never the word — as fast as you can for 10 rounds.</li>
+                  <li>Run it twice. Your second run is the experiment.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> Reading is so automated it hijacks your answer. Overriding it recruits prefrontal control circuits — and within a couple of runs, you'll feel the override get cheaper. That's adaptation you can time.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>inhibition · processing speed</b></span><button class="timerbtn" data-seconds="60" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="attention">
+              <div class="ex-top"><span class="ex-cat">Attention</span><span class="ex-time">90 sec</span></div>
+              <h3>Count Back by Sevens</h3>
+              <div class="ex-demo" data-demo="sevens">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">Count it off on your fingers if it helps: 100, 93, 86… one fold per subtraction.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Start at 100. Subtract 7, out loud: 100, 93, 86…</li>
+                  <li>Keep going until the timer ends. Lose your place? Restart from the last sure number.</li>
+                  <li>Tomorrow, start from 103. Compare how far you get.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> Holding a running total while computing the next step loads working memory — the brain's whiteboard. It's effortful precisely because it can't be automated, which is what makes it training rather than performance.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>working memory · mental stamina</b></span><button class="timerbtn" data-seconds="90" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="pattern">
+              <div class="ex-top"><span class="ex-cat">Pattern break</span><span class="ex-time">90 sec</span></div>
+              <h3>Backwards Alphabet</h3>
+              <div class="ex-demo" data-demo="letters">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">Tap or say each letter on its own — Z, Y, X — no singing the song backwards.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Say the alphabet backwards: Z, Y, X… out loud, no singing it.</li>
+                  <li>Stumble? Note the letter where it breaks — that's your frontier.</li>
+                  <li>Or use the tap-along version in “See it for yourself” and race your own time.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> The alphabet is stored as a one-way chain. Reversing it breaks the chain and forces item-by-item retrieval — a pure hit of novelty on material you “know,” which is why it improves so visibly, so fast.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>flexible recall · sequencing</b></span><button class="timerbtn" data-seconds="90" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="pattern">
+              <div class="ex-top"><span class="ex-cat">Pattern break</span><span class="ex-time">60 sec</span></div>
+              <h3>Category Switchbacks</h3>
+              <div class="ex-demo" data-demo="switchback">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">Alternate out loud: animal, fruit, animal, fruit… Point at each category if it helps you switch.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Name one animal, then one fruit, then one animal, then one fruit…</li>
+                  <li>Keep alternating, faster and faster, no repeats.</li>
+                  <li>Level up: animal → country → thing in a kitchen, rotating.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> Each switch makes your brain drop one mental set and load another — “set-shifting,” a core executive function used in verbal-fluency testing. The brief stall before each switch is the exact muscle being worked.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>cognitive flexibility · fluency</b></span><button class="timerbtn" data-seconds="60" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="habits">
+              <div class="ex-top"><span class="ex-cat">Micro-habit</span><span class="ex-time">2 min</span></div>
+              <h3>Write an If–Then Swap</h3>
+              <div class="ex-demo" data-demo="sticky">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">Write the swap on a sticky note and park it where the trigger lives.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Name one trigger: “When I reach for my phone in the elevator…”</li>
+                  <li>Attach a replacement: “…I will do ten Finger Ladders instead.”</li>
+                  <li>Say it once, out loud, in full. Put it on a sticky note where the trigger lives.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> “Implementation intentions” — pre-deciding your response to a cue — are among the most replicated findings in behavior-change research. You rehearse the new circuit in advance, so at the moment of the trigger it fires with less willpower.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>habit replacement · self-direction</b></span><button class="timerbtn" data-seconds="120" type="button"></button></div>
+            </article>
+
+            <article class="ex-card" data-cat="habits">
+              <div class="ex-top"><span class="ex-cat">Micro-habit</span><span class="ex-time">2 min</span></div>
+              <h3>Teach It in Two Minutes</h3>
+              <div class="ex-demo" data-demo="gesture">
+                <div class="demo-stage"></div>
+                <p class="demo-cap">Say it out loud, hands and all, as if to a bright 12-year-old. Stumbles mark the gaps.</p>
+                <button class="demo-btn" type="button" aria-label="Pause the animation"></button>
+              </div>
+              <div class="ex-how">
+                <ol>
+                  <li>Pick anything you learned recently — a recipe step, a shortcut, a fact.</li>
+                  <li>Explain it out loud as if to a bright 12-year-old. No notes.</li>
+                  <li>Where you stumble is exactly what to look up next.</li>
+                </ol>
+              </div>
+              <p class="ex-why"><b>Why it works:</b> Retrieving and reorganizing knowledge — “retrieval practice” — strengthens memory traces far more than re-reading does. Teaching forces retrieval, sequencing, and translation all at once, which is why it feels harder and works better.</p>
+              <div class="ex-foot"><span class="trains">Trains: <b>memory · understanding</b></span><button class="timerbtn" data-seconds="120" type="button"></button></div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 SEE IT FOR YOURSELF -->
+      <section id="see">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-num">06 — See it for yourself</span>
+            <h2>Don't take our word for it. <em>Watch your own brain adapt.</em></h2>
+            <p>Three tiny experiments, each under a minute. The point isn't the score — it's the felt difference between your first attempt and your second. That difference is plasticity, happening on a timescale you can perceive.</p>
+          </div>
+
+          <div class="widget" id="w-fingers">
+            <div class="widget-head">
+              <h3>Experiment 1 — The Finger Sequence</h3>
+              <span class="wtag">MOTOR LEARNING · ~1 MIN</span>
+            </div>
+            <p>The pads will flash a sequence of fingers. Watch, then tap it back. Each round adds one more step. Round one usually feels clumsy; by round three or four the same movements start to flow. Same fingers, same brain — new wiring in between. (On a real keyboard of flesh: do it with your actual hand after, thumb to pinky.)</p>
+            <div class="pads" id="pads">
+              <button class="pad" data-f="0" type="button"><span class="fname">Thumb</span><span class="fnum">FINGER 1</span></button>
+              <button class="pad" data-f="1" type="button"><span class="fname">Index</span><span class="fnum">FINGER 2</span></button>
+              <button class="pad" data-f="2" type="button"><span class="fname">Middle</span><span class="fnum">FINGER 3</span></button>
+              <button class="pad" data-f="3" type="button"><span class="fname">Ring</span><span class="fnum">FINGER 4</span></button>
+              <button class="pad" data-f="4" type="button"><span class="fname">Pinky</span><span class="fnum">FINGER 5</span></button>
+            </div>
+            <div class="seq-progress" id="seq-progress" aria-hidden="true"></div>
+            <div class="widget-actions">
+              <button class="btn btn-light" id="seq-start" type="button">Start round 1</button>
+              <span class="readout" id="seq-readout" style="margin-top:0">Best sequence so far: <b>0</b> · Rounds played: <b>0</b></span>
+            </div>
+            <p class="readout" id="seq-msg" aria-live="polite">Press start and watch the pads.</p>
+          </div>
+
+          <div class="widget" id="w-stroop">
+            <div class="widget-head">
+              <h3>Experiment 2 — The Stroop Test</h3>
+              <span class="wtag">ATTENTION &amp; INHIBITION · ~40 SEC</span>
+            </div>
+            <p>A word will appear in colored ink. Tap the button matching the <strong>ink color</strong> — not the word. Your reading circuit will try to answer first, every time; overriding it is the exercise. Ten rounds. Then run it again and watch your time drop: that drop is your prefrontal cortex getting more efficient at the override, live.</p>
+            <div class="stroop-word" id="stroop-word" aria-live="polite">Ready?</div>
+            <div class="stroop-btns" id="stroop-btns">
+              <button data-c="red" type="button">Red</button>
+              <button data-c="blue" type="button">Blue</button>
+              <button data-c="green" type="button">Green</button>
+              <button data-c="amber" type="button">Amber</button>
+            </div>
+            <div class="widget-actions">
+              <button class="btn btn-light" id="stroop-start" type="button">Start the test</button>
+              <span class="readout" id="stroop-readout" style="margin-top:0">Round: <b>—</b> / 10</span>
+            </div>
+            <p class="readout" id="stroop-msg" aria-live="polite">The Stroop effect was first described in 1935 — and it has been humbling fast readers ever since.</p>
+          </div>
+
+          <div class="widget" id="w-alpha">
+            <div class="widget-head">
+              <h3>Experiment 3 — The Backwards Alphabet Race</h3>
+              <span class="wtag">SEQUENCING &amp; RECALL · ~1 MIN</span>
+            </div>
+            <p>Tap the letters in reverse order — Z first, A last. The alphabet lives in your memory as a one-way song; unwinding it forces genuine reconstruction. Finish once, then immediately go again: most people cut their time dramatically on the second run. Two data points, one unmistakable conclusion.</p>
+            <p class="alpha-next" id="alpha-next">First letter: <b>Z</b></p>
+            <div class="alpha-grid" id="alpha-grid"></div>
+            <div class="widget-actions">
+              <button class="btn btn-outline" id="alpha-reset" type="button">Restart the race</button>
+              <span class="readout" id="alpha-readout" style="margin-top:0">Progress: <b>0</b> / 26 · Errors: <b>0</b></span>
+            </div>
+            <p class="readout" id="alpha-msg" aria-live="polite">Your timer starts on your first tap.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 WATCH -->
+      <section id="watch">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-num">07 — Watch &amp; do</span>
+            <h2>One deep dive, plus short drills to follow along</h2>
+            <p>Handpicked from working clinicians and a Stanford neuroscientist — people whose job is literally rewiring brains. Each card stands on its own; press play to load the video right here, or open it on the platform. One honest note: viral clips sometimes promise more than the evidence supports (no, finger wiggles don't “prevent dementia”). The value here is in the demonstrated movements and the explanations, not the hype.</p>
+          </div>
+          <div class="vid-grid">
+
+            <article class="vid-card">
+              <div class="vid-frame" data-embed="https://www.youtube.com/embed/LG53Vxum0as">
+                <div class="skeleton">VIDEO LOADS AS YOU SCROLL</div>
+              </div>
+              <div class="vid-body">
+                <span class="vid-creator">HUBERMAN LAB · ANDREW HUBERMAN, STANFORD NEUROSCIENTIST</span>
+                <h3>How to Focus to Change Your Brain</h3>
+                <p>The deep dive behind this whole page: why alertness and focused attention are the gatekeepers of adult plasticity, why the actual rewiring completes during sleep, and how to structure practice around both. Long — but the first 20 minutes alone will change how you learn.</p>
+                <a class="vid-link" href="https://www.youtube.com/watch?v=LG53Vxum0as" target="_blank" rel="noopener">Watch on YouTube →</a>
+              </div>
+            </article>
+
+            <article class="vid-card">
+              <div class="vid-frame" data-embed="https://www.youtube.com/embed/1o3Fti43dyc">
+                <div class="skeleton">VIDEO LOADS AS YOU SCROLL</div>
+              </div>
+              <div class="vid-body">
+                <span class="vid-creator">YOUTUBE SHORTS · @NAAGRUVIKAAS6474</span>
+                <h3>Simple Brain Activation Exercise to Boost Focus &amp; Neuroplasticity</h3>
+                <p>A 60-second demo of the two-hands-at-once idea behind our Thumb–Pinky Switch: both hands performing different movements simultaneously, which forces the hemispheres to coordinate instead of mirror. Watch once, then do it along with the clip.</p>
+                <a class="vid-link" href="https://www.youtube.com/shorts/1o3Fti43dyc" target="_blank" rel="noopener">Watch on YouTube →</a>
+              </div>
+            </article>
+
+            <article class="vid-card">
+              <div class="vid-frame" data-embed="https://www.youtube.com/embed/GH8_sC3gx5o">
+                <div class="skeleton">VIDEO LOADS AS YOU SCROLL</div>
+              </div>
+              <div class="vid-body">
+                <span class="vid-creator">POST STROKE · ELYSE, OCCUPATIONAL THERAPIST</span>
+                <h3>You Want To Move Your Hand Better After Stroke — Do This</h3>
+                <p>Plasticity with the stakes turned all the way up. An occupational therapist walks through five hand exercises — wrist and finger extension, grip and release, thumb opposition, precision handling — and explains the repetition counts recovery actually demands. The same principles, proven in the hardest classroom there is.</p>
+                <a class="vid-link" href="https://www.youtube.com/watch?v=GH8_sC3gx5o" target="_blank" rel="noopener">Watch on YouTube →</a>
+              </div>
+            </article>
+
+            <article class="vid-card">
+              <div class="vid-frame" data-embed="https://www.youtube.com/embed/2CuujPY3DAw">
+                <div class="skeleton">VIDEO LOADS AS YOU SCROLL</div>
+              </div>
+              <div class="vid-body">
+                <span class="vid-creator">SKILLS AND WELLNESS · NATHAN, OCCUPATIONAL THERAPIST</span>
+                <h3>Hand Won't Open After Stroke? Try This Exercise Routine</h3>
+                <p>Close cousins of our One-Finger Lifts: finger lifting from the table, finger spreading, thumb movement, and hand-opening drills, demonstrated slowly and clearly by an OT. A good follow-along if you want to feel what deliberate, isolated finger control really requires.</p>
+                <a class="vid-link" href="https://www.youtube.com/watch?v=2CuujPY3DAw" target="_blank" rel="noopener">Watch on YouTube →</a>
+              </div>
+            </article>
+
+            <article class="vid-card">
+              <div class="vid-frame tall" data-embed="https://www.tiktok.com/embed/v2/7621633770441018655">
+                <div class="skeleton">VIDEO LOADS AS YOU SCROLL</div>
+              </div>
+              <div class="vid-body">
+                <span class="vid-creator">TIKTOK · JAMES MOORE (@JAMESEVANMOORE)</span>
+                <h3>The 10-Second Pinky Drill</h3>
+                <p>Fourteen seconds, one move: hold a fixed hand position and wiggle only the pinky. It looks trivial and feels surprisingly hard — pinky isolation is genuinely demanding because the ring and pinky fingers share machinery. Try it while you watch; the awkwardness is the point.</p>
+                <a class="vid-link" href="https://www.tiktok.com/@jamesevanmoore/video/7621633770441018655?_r=1&_d=secCgYIASAHKAESPgo8d0s%2FBUeauSKTlH8dieDZFOLFotmf6Gzbx5MDpslZJEbGQQc1pKmXTBJVEsPBM%2F7yNXe5pYJpQO3COYayGgA%3D&_svg=3&checksum=d861c4ec6a1784702858c41e19044abd5ab7f4d87565a3629284189f7cab0ad7&item_author_type=2&link_reflow_popup_iteration_s" target="_blank" rel="noopener">Watch on TikTok →</a>
+              </div>
+            </article>
+
+            <article class="vid-card">
+              <div class="vid-body" style="justify-content:center">
+                <span class="vid-creator">BEFORE YOU SCROLL ON</span>
+                <h3>A word about viral “brain hacks”</h3>
+                <p>Short-form platforms reward big promises, and brain content is no exception. Claims that a single wiggle prevents dementia, “activates 100% of your brain,” or detoxes anything are marketing, not neuroscience. Neurologists asked about the viral “pinky time” trend say the movements are harmless and genuinely engage motor circuits — but the real gains come from novelty, complexity, and consistency, not from any one magic move. Use the videos for the movements; keep your expectations evidence-sized.</p>
+                <a class="vid-link" href="#science">See what's established vs. emerging ↓</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 SCIENCE -->
+      <section id="science">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-num">08 — The honest science</span>
+            <h2>What's solid, what's still emerging</h2>
+            <p>Neuroplasticity attracts exaggeration like few topics in science. Here's where the ground is firm and where it's still being surveyed — because a brain you're trying to train deserves straight information.</p>
+          </div>
+          <div class="sci-grid">
+            <div class="sci-panel solid">
+              <h3>Well established</h3>
+              <ul>
+                <li><b>Experience changes brain structure and function at every age.</b> From Hebb's 1949 principle to modern imaging — London taxi drivers' hippocampi (Maguire et al., PNAS, 2000), juggling training changing gray matter within weeks (Draganski et al., Nature, 2004).</li>
+                <li><b>Repetition + task-specific practice drives recovery after stroke.</b> Constraint-induced movement therapy and high-repetition rehab are standard, evidence-based care.</li>
+                <li><b>Attention and sleep gate learning.</b> Focused attention engages the neuromodulators required for change; consolidation continues during sleep.</li>
+                <li><b>Exercise supports brain health.</b> Aerobic exercise has been shown to increase hippocampal volume in older adults (Erickson et al., PNAS, 2011) — arguably the single best-supported “brain booster” there is.</li>
+                <li><b>Therapies like CBT produce measurable change</b> by training new responses — plasticity is their mechanism, not a side effect.</li>
+              </ul>
+            </div>
+            <div class="sci-panel emerging">
+              <h3>Promising, still emerging</h3>
+              <ul>
+                <li><b>New neurons in the adult hippocampus.</b> Evidence for adult neurogenesis in humans is real but actively debated — how much, how long it lasts, and what it does are open questions.</li>
+                <li><b>Commercial “brain training” games.</b> People reliably get better at the game; transfer to general cognition is weak and contested. Novel real-world skills are the safer bet.</li>
+                <li><b>Micro-drills for disease prevention.</b> Finger exercises engage motor circuits and may support fine-motor function, but no study shows a specific drill prevents Alzheimer's or dementia.</li>
+                <li><b>Meditation reshaping brain structure.</b> Some imaging findings are intriguing; effect sizes, methods, and replicability are still being worked out.</li>
+                <li><b>Supplements and “neuro-hacks.”</b> Most marketed plasticity boosters lack rigorous human evidence. Sleep, exercise, and learning remain the proven stack.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 START -->
+      <section id="start">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="sec-num">09 — Your first week</span>
+            <h2>Seven days, about twenty minutes total</h2>
+            <p>Consistency beats intensity — the brain builds roads from traffic, not from one dramatic road trip. Here's a starter week built entirely from the drills above.</p>
+          </div>
+          <div class="plan">
+            <div class="plan-row"><span class="day">DAY 1</span><p><b>Feel it.</b> Run all three experiments in “See it for yourself.” Notice the first-vs-second attempt gap. That's your before picture.</p></div>
+            <div class="plan-row"><span class="day">DAY 2</span><p><b>Hands.</b> Finger Ladder + Thumb–Pinky Switch, one timed minute each, morning and evening.</p></div>
+            <div class="plan-row"><span class="day">DAY 3</span><p><b>Other hand.</b> Wrong-Hand Everything for your morning routine. It will be slow. Slow is the workout.</p></div>
+            <div class="plan-row"><span class="day">DAY 4</span><p><b>Senses.</b> Sound Hunt at lunch, Eyes-Closed Explorer after dinner. Two minutes of paying a different kind of attention.</p></div>
+            <div class="plan-row"><span class="day">DAY 5</span><p><b>Break a pattern.</b> Backwards Alphabet + Category Switchbacks. Beat yesterday's frontier letter.</p></div>
+            <div class="plan-row"><span class="day">DAY 6</span><p><b>Rewire one habit.</b> Write your If–Then Swap and place the note where the trigger lives. Teach something in two minutes.</p></div>
+            <div class="plan-row"><span class="day">DAY 7</span><p><b>Re-test.</b> Repeat Day 1's experiments. Compare times and best sequences. Then pick next week's two hardest drills — hard means it's working.</p></div>
+          </div>
+
+          <div class="cta-band">
+            <h2>The best time to start was years ago. The second-best time is <em>this minute.</em></h2>
+            <p>Your brain doesn't need a program, a purchase, or permission. It needs a signal that something matters — delivered with attention, repeated tomorrow. You already sent the first signals by reading this far. Send one more, deliberately.</p>
+            <div class="hero-cta">
+              <a class="btn btn-solid" href="#try">Do one drill now — 60 seconds</a>
+              <a class="btn btn-ghost" href="#see">Re-run an experiment</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <h3>Sources &amp; further reading</h3>
+        <div class="refs">
+          <span>Hebb, D.O. (1949). <i>The Organization of Behavior</i> — the original “fire together, wire together” proposal.</span>
+          <span>Maguire, E.A. et al. (2000). “Navigation-related structural change in the hippocampi of taxi drivers.” <i>PNAS</i>, 97(8).</span>
+          <span>Draganski, B. et al. (2004). “Neuroplasticity: changes in grey matter induced by training.” <i>Nature</i>, 427.</span>
+          <span>Erickson, K.I. et al. (2011). “Exercise training increases size of hippocampus and improves memory.” <i>PNAS</i>, 108(7).</span>
+          <span>Stroop, J.R. (1935). “Studies of interference in serial verbal reactions.” <i>Journal of Experimental Psychology</i>, 18(6).</span>
+          <span>Gollwitzer, P.M. (1999). “Implementation intentions: strong effects of simple plans.” <i>American Psychologist</i>, 54(7).</span>
+          <span>Video sources linked in the “Watch &amp; do” section: Huberman Lab; Post Stroke; Skills and Wellness; James Moore; @naagruvikaas6474.</span>
+        </div>
+        <p class="disclaimer">This page is education, not medical advice. The drills here are general wellness exercises for healthy adults. If you're recovering from a stroke or brain injury, or have a neurological condition, work with your own physician, occupational therapist, or physical therapist — they'll tailor dosage and movements to you, and that tailoring matters.</p>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        "use strict";
+        var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+        /* ================= hero neuron canvas ================= */
+        (function () {
+          var canvas = document.getElementById("netcanvas");
+          if (!canvas || reduced) return;
+          var ctx = canvas.getContext("2d");
+          var W = 0, H = 0, nodes = [], raf = null, visible = true;
+          function resize() {
+            var r = canvas.parentElement.getBoundingClientRect();
+            W = canvas.width = Math.floor(r.width);
+            H = canvas.height = Math.floor(r.height);
+            var count = Math.min(64, Math.floor(W * H / 26000));
+            nodes = [];
+            for (var i = 0; i < count; i++) {
+              nodes.push({
+                x: Math.random() * W, y: Math.random() * H,
+                vx: (Math.random() - .5) * .22, vy: (Math.random() - .5) * .22,
+                r: 1.4 + Math.random() * 2.1, ph: Math.random() * Math.PI * 2
+              });
+            }
+          }
+          function frame(t) {
+            if (!visible) { raf = null; return; }
+            ctx.clearRect(0, 0, W, H);
+            var i, j, a, b, dx, dy, d;
+            for (i = 0; i < nodes.length; i++) {
+              a = nodes[i];
+              a.x += a.vx; a.y += a.vy;
+              if (a.x < 0 || a.x > W) a.vx *= -1;
+              if (a.y < 0 || a.y > H) a.vy *= -1;
+              for (j = i + 1; j < nodes.length; j++) {
+                b = nodes[j]; dx = a.x - b.x; dy = a.y - b.y; d = dx * dx + dy * dy;
+                if (d < 150 * 150) {
+                  ctx.strokeStyle = "rgba(90,216,205," + (0.13 * (1 - d / 22500)) + ")";
+                  ctx.lineWidth = 1;
+                  ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke();
+                }
+              }
+            }
+            for (i = 0; i < nodes.length; i++) {
+              a = nodes[i];
+              var glow = .45 + .35 * Math.sin(t / 900 + a.ph);
+              ctx.fillStyle = "rgba(120,230,218," + glow + ")";
+              ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, Math.PI * 2); ctx.fill();
+            }
+            raf = requestAnimationFrame(frame);
+          }
+          resize();
+          window.addEventListener("resize", resize);
+          if ("IntersectionObserver" in window) {
+            new IntersectionObserver(function (entries) {
+              visible = entries[0].isIntersecting;
+              if (visible && !raf) raf = requestAnimationFrame(frame);
+            }).observe(canvas);
+          }
+          raf = requestAnimationFrame(frame);
+        })();
+
+        /* ================= fixed vs trainable toggle ================= */
+        (function () {
+          var bF = document.getElementById("seg-fixed"), bT = document.getElementById("seg-train");
+          var pF = document.getElementById("panel-fixed"), pT = document.getElementById("panel-train");
+          if (!bF || !bT) return;
+          function show(train) {
+            bF.classList.toggle("on", !train); bT.classList.toggle("on", train);
+            bF.setAttribute("aria-selected", String(!train)); bT.setAttribute("aria-selected", String(train));
+            pF.hidden = train; pT.hidden = !train;
+          }
+          bF.addEventListener("click", function () { show(false); });
+          bT.addEventListener("click", function () { show(true); });
+        })();
+
+        /* ================= trace-a-path reps ================= */
+        (function () {
+          var btn = document.getElementById("trace-btn");
+          var path = document.getElementById("trace-path");
+          var pulse = document.getElementById("trace-pulse");
+          var repsEl = document.getElementById("trace-reps");
+          var speedEl = document.getElementById("trace-speed");
+          var msgEl = document.getElementById("trace-msg");
+          if (!btn || !path) return;
+          var reps = 0, len = path.getTotalLength(), busy = false;
+          var msgs = [
+            "First reps feel slow and effortful. That's normal — the path is still dirt.",
+            "Rep by rep, the signal needs less from you. Watch the trip time fall.",
+            "The path is visibly thicker now. In a real circuit: stronger synapses, fresh myelin.",
+            "Same route, fraction of the effort. This is why skills start to feel “automatic.”",
+            "Ten reps in miniature. Real circuits build over days — and sleep pours the concrete."
+          ];
+          function duration() { return Math.max(320, 1400 - reps * 115); }
+          btn.addEventListener("click", function () {
+            if (busy) return;
+            busy = true; reps++;
+            repsEl.textContent = reps;
+            path.setAttribute("stroke-width", Math.min(11, 2.5 + reps * 0.85).toFixed(2));
+            msgEl.textContent = msgs[Math.min(msgs.length - 1, Math.floor(reps / 3))];
+            var dur = duration(), t0 = performance.now();
+            speedEl.textContent = (dur / 1000).toFixed(2) + "s";
+            pulse.setAttribute("opacity", "1");
+            (function step(now) {
+              var p = Math.min(1, (now - t0) / dur);
+              var pt = path.getPointAtLength(p * len);
+              pulse.setAttribute("cx", pt.x); pulse.setAttribute("cy", pt.y);
+              if (p < 1) requestAnimationFrame(step);
+              else { pulse.setAttribute("opacity", "0"); busy = false; }
+            })(t0);
+          });
+        })();
+
+        /* ================= exercise filters + shuffle ================= */
+        var repTotal = 0;
+        var repEl = document.getElementById("rep-total");
+        function addRep() { repTotal++; if (repEl) repEl.textContent = repTotal; }
+        (function () {
+          var chips = Array.prototype.slice.call(document.querySelectorAll(".chip[data-filter]"));
+          var cards = Array.prototype.slice.call(document.querySelectorAll(".ex-card"));
+          chips.forEach(function (chip) {
+            chip.addEventListener("click", function () {
+              chips.forEach(function (c) { c.classList.remove("on"); });
+              chip.classList.add("on");
+              var f = chip.getAttribute("data-filter");
+              cards.forEach(function (card) {
+                card.classList.toggle("hidden", f !== "all" && card.getAttribute("data-cat") !== f);
+              });
+            });
+          });
+          var shuffle = document.getElementById("shuffle-btn");
+          if (shuffle) shuffle.addEventListener("click", function () {
+            chips.forEach(function (c) { c.classList.toggle("on", c.getAttribute("data-filter") === "all"); });
+            cards.forEach(function (card) { card.classList.remove("hidden", "flash"); });
+            var pick = cards[Math.floor(Math.random() * cards.length)];
+            pick.scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "center" });
+            window.setTimeout(function () { pick.classList.add("flash"); }, reduced ? 0 : 350);
+            window.setTimeout(function () { pick.classList.remove("flash"); }, 2600);
+          });
+        })();
+
+        /* ================= exercise timers ================= */
+        (function () {
+          var CIRC = 2 * Math.PI * 8;
+          document.querySelectorAll(".timerbtn").forEach(function (btn) {
+            var total = parseInt(btn.getAttribute("data-seconds"), 10) || 60;
+            var remain = total, iv = null, endAt = 0;
+            function render(label) {
+              btn.innerHTML =
+                '<svg class="ring" viewBox="0 0 20 20" aria-hidden="true">' +
+                '<circle class="track" cx="10" cy="10" r="8"></circle>' +
+                '<circle class="prog" cx="10" cy="10" r="8" stroke-dasharray="' + CIRC.toFixed(1) +
+                '" stroke-dashoffset="' + (CIRC * (1 - remain / total)).toFixed(1) + '"></circle></svg>' +
+                '<span>' + label + '</span>';
+            }
+            function labelFor(s) {
+              if (s >= 60) return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+              return s + "s";
+            }
+            function stop() { if (iv) { clearInterval(iv); iv = null; } }
+            render("Start · " + labelFor(total));
+            btn.addEventListener("click", function () {
+              if (iv) { // pause
+                stop(); remain = Math.max(0, Math.round((endAt - performance.now()) / 1000));
+                render("Resume · " + labelFor(remain)); return;
+              }
+              if (remain <= 0) remain = total;
+              btn.classList.remove("done");
+              endAt = performance.now() + remain * 1000;
+              render(labelFor(remain));
+              iv = setInterval(function () {
+                remain = Math.max(0, Math.round((endAt - performance.now()) / 1000));
+                if (remain <= 0) {
+                  stop(); remain = 0; render("Done — that's a rep");
+                  btn.classList.add("done"); addRep();
+                  window.setTimeout(function () { remain = total; btn.classList.remove("done"); render("Go again · " + labelFor(total)); }, 3000);
+                } else render(labelFor(remain));
+              }, 200);
+            });
+          });
+        })();
+
+        /* ================= hand demos ================= */
+        (function () {
+          var boxes = document.querySelectorAll(".ex-demo");
+          if (!boxes.length) return;
+
+          var FINGERS = [
+            { cls: "d-index", cx: 72, len: 58 },
+            { cls: "d-middle", cx: 91, len: 68 },
+            { cls: "d-ring", cx: 110, len: 60 },
+            { cls: "d-pinky", cx: 128, len: 44 }
+          ];
+          function handInner() {
+            var s = '<ellipse cx="100" cy="200" rx="72" ry="5" fill="var(--ink)" opacity=".07"></ellipse>';
+            s += '<g transform="translate(63,150)"><g class="digit d-thumb" style="transform-origin:50% 88%">' +
+              '<rect class="handshape" x="-8" y="-62" width="16" height="70" rx="8"></rect>' +
+              '<ellipse class="nail" cx="0" cy="-50" rx="4.4" ry="6"></ellipse></g></g>';
+            FINGERS.forEach(function (f) {
+              var org = (f.len / (f.len + 8) * 100).toFixed(1);
+              s += '<g transform="translate(' + f.cx + ',102)"><g class="digit ' + f.cls + '" style="transform-origin:50% ' + org + '%">' +
+                '<rect class="handshape" x="-8" y="' + (-f.len) + '" width="16" height="' + (f.len + 8) + '" rx="8"></rect>' +
+                '<ellipse class="nail" cx="0" cy="' + (-(f.len - 11)) + '" rx="4.4" ry="6"></ellipse></g></g>';
+            });
+            s += '<path class="handshape" d="M62 196 L62 112 Q62 97 75 96 Q84 95 92 96 Q101 95 110 96 Q120 95 128 97 Q138 99 138 112 L138 196 Q138 199 135 199 L65 199 Q62 199 62 196 Z"></path>';
+            s += '<path d="M74 179 Q100 185 126 179" fill="none" stroke="var(--skin-line)" stroke-width="1.6" opacity=".45" stroke-linecap="round"></path>';
+            return s;
+          }
+          function gripFist() {
+            return '<path class="handshape" d="M-2 -36 Q-24 -40 -28 -20 Q-31 -4 -17 1 L4 3 Q14 1 13 -13 Q12 -32 -2 -36 Z"></path>' +
+              '<rect class="handshape" x="-25" y="-42" width="11" height="20" rx="5.5" transform="rotate(16 -19 -32)"></rect>' +
+              '<rect class="handshape" x="-8" y="-45" width="11" height="19" rx="5.5" transform="rotate(4 -2 -35)"></rect>' +
+              '<rect class="handshape" x="-24" y="-18" width="11" height="19" rx="5.5" transform="rotate(-40 -18 -8)"></rect>';
+          }
+          function svgWrap(vb, inner) {
+            return '<svg viewBox="' + vb + '" role="img" aria-label="Animated diagram of a hand performing the exercise">' + inner + "</svg>";
+          }
+          function setT(scope, cls, t) { var el = scope.querySelector("." + cls); if (el) el.style.transform = t; }
+          function stepper(ms, count, fn) {
+            var iv = null, i = 0;
+            return {
+              start: function () { if (iv || reduced) return; fn(0); i = 1; iv = setInterval(function () { fn(i % count); i++; }, ms); },
+              stop: function () { if (iv) { clearInterval(iv); iv = null; } }
+            };
+          }
+
+          function ctrlLadder(stage) {
+            stage.innerHTML = svgWrap("0 0 200 204", handInner() + '<circle class="contact-ring" r="12"></circle>');
+            var ring = stage.querySelector(".contact-ring");
+            var order = [0, 1, 2, 3, 2, 1];
+            var thumbA = [-46, -34, -22, -10];
+            function pose(i) {
+              if (i >= order.length) {
+                FINGERS.forEach(function (f) { setT(stage, f.cls, "rotate(0deg)"); });
+                setT(stage, "d-thumb", "rotate(-32deg)");
+                return;
+              }
+              var fi = order[i], f = FINGERS[fi];
+              FINGERS.forEach(function (g, gi) { setT(stage, g.cls, gi === fi ? "scaleY(.66) rotate(-7deg)" : "rotate(0deg)"); });
+              setT(stage, "d-thumb", "rotate(" + thumbA[fi] + "deg)");
+              ring.setAttribute("cx", f.cx - 5);
+              ring.setAttribute("cy", 104 - f.len * 0.66);
+              ring.classList.remove("pulse");
+              void ring.getBoundingClientRect();
+              ring.classList.add("pulse");
+            }
+            return stepper(760, order.length + 1, pose);
+          }
+
+          function ctrlLifts(stage) {
+            stage.innerHTML = svgWrap("0 0 200 204", handInner() + '<line x1="10" y1="203" x2="190" y2="203" stroke="var(--line)" stroke-width="2"></line>');
+            function pose(i) {
+              FINGERS.forEach(function (f, fi) { setT(stage, f.cls, fi === i ? "translateY(-15px)" : "translateY(0px)"); });
+            }
+            return stepper(680, FINGERS.length + 2, pose);
+          }
+
+          function ctrlSwitch(stage) {
+            var inner = handInner();
+            stage.innerHTML = svgWrap("0 0 340 172",
+              '<g transform="translate(8,4) scale(.8)"><g class="sw-a">' + inner + '</g></g>' +
+              '<g transform="translate(332,4) scale(-.8,.8)"><g class="sw-b">' + inner + "</g></g>");
+            var ha = stage.querySelector(".sw-a"), hb = stage.querySelector(".sw-b");
+            var OPEN_T = "rotate(-34deg)", CURL_T = "rotate(26deg) scale(.58)", OPEN_F = "rotate(0deg)", CURL_F = "scaleY(.34) rotate(5deg)";
+            function pose(hand, thumbOut) {
+              setT(hand, "d-thumb", thumbOut ? OPEN_T : CURL_T);
+              ["d-index", "d-middle", "d-ring"].forEach(function (c) { setT(hand, c, CURL_F); });
+              setT(hand, "d-pinky", thumbOut ? CURL_F : OPEN_F);
+            }
+            return stepper(1050, 2, function (i) { pose(ha, i === 0); pose(hb, i !== 0); });
+          }
+
+          function ctrlExplorer(stage) {
+            var objs =
+              '<circle class="obj-shape" cx="60" cy="188" r="15"></circle>' +
+              '<path class="obj-shape" d="M170 173 L186 199 L154 199 Z"></path>' +
+              '<rect class="obj-shape" x="263" y="173" width="30" height="30"></rect>' +
+              '<line x1="6" y1="204" x2="334" y2="204" stroke="var(--line)" stroke-width="2"></line>';
+            stage.innerHTML = svgWrap("0 0 340 210", objs +
+              '<g class="mover"><g transform="translate(170,192) rotate(180) scale(.66)">' + handInner() + "</g></g>");
+            var mover = stage.querySelector(".mover");
+            mover.style.transition = "transform .8s ease";
+            var shapes = stage.querySelectorAll(".obj-shape");
+            var timers = [], loop = null, dx = -44;
+            function later(fn, ms) { timers.push(setTimeout(fn, ms)); }
+            function move(x) { dx = x; mover.style.transform = "translate(" + dx + "px,0px)"; }
+            function wiggle(on) {
+              FINGERS.forEach(function (f, i) { setT(stage, f.cls, on ? "rotate(" + (i % 2 ? 7 : -7) + "deg)" : "rotate(0deg)"); });
+            }
+            function touch(idx, on) {
+              mover.style.transform = "translate(" + dx + "px," + (on ? 10 : 0) + "px)";
+              wiggle(on);
+              if (shapes[idx]) shapes[idx].classList.toggle("touched", on);
+            }
+            function cycle() {
+              move(-44);
+              later(function () { touch(0, true); }, 900);
+              later(function () { touch(0, false); }, 1750);
+              later(function () { move(66); }, 2000);
+              later(function () { touch(1, true); }, 2900);
+              later(function () { touch(1, false); }, 3750);
+              later(function () { move(174); }, 4000);
+              later(function () { touch(2, true); }, 4900);
+              later(function () { touch(2, false); }, 5750);
+              loop = setTimeout(cycle, 6900);
+            }
+            return {
+              start: function () { if (loop || reduced) return; cycle(); },
+              stop: function () {
+                timers.forEach(clearTimeout); timers = [];
+                if (loop) { clearTimeout(loop); loop = null; }
+                wiggle(false);
+                shapes.forEach(function (s) { s.classList.remove("touched"); });
+              }
+            };
+          }
+
+          function ctrlWriting(stage) {
+            var paper = '<rect x="14" y="16" width="292" height="168" rx="10" fill="var(--surface)" stroke="var(--line)"></rect>' +
+              '<line x1="34" y1="150" x2="286" y2="150" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="2 6"></line>';
+            var d = "M44 128 C 66 62, 92 168, 118 104 C 136 60, 158 150, 184 108 C 204 76, 224 140, 250 104 C 264 84, 280 108, 292 96";
+            var grip = '<g class="grip">' +
+              '<g transform="rotate(24)"><rect x="-2.6" y="-54" width="5.2" height="48" rx="2.4" fill="#33424c"></rect><path d="M-2.6 -6 L2.6 -6 L0 2 Z" fill="var(--amber)"></path></g>' +
+              gripFist() + "</g>";
+            stage.innerHTML = svgWrap("0 0 320 200", paper +
+              '<path class="ink" d="' + d + '" fill="none" stroke="var(--teal)" stroke-width="2.6" stroke-linecap="round"></path>' + grip);
+            var path = stage.querySelector(".ink"), gripEl = stage.querySelector(".grip");
+            var L = path.getTotalLength();
+            path.style.strokeDasharray = String(L);
+            path.style.strokeDashoffset = String(L);
+            gripEl.style.opacity = "0";
+            var raf = null, t0 = null;
+            function frame(now) {
+              if (t0 === null) t0 = now;
+              var t = (now - t0) % 4600;
+              if (t < 3400) {
+                var f = t / 3400;
+                path.style.opacity = "1";
+                path.style.strokeDashoffset = String(L * (1 - f));
+                var pt = path.getPointAtLength(f * L);
+                gripEl.setAttribute("transform", "translate(" + pt.x.toFixed(1) + "," + pt.y.toFixed(1) + ") rotate(-6) scale(1.3)");
+                gripEl.style.opacity = "1";
+              } else if (t < 3900) {
+                var o = String(1 - (t - 3400) / 500);
+                path.style.opacity = o; gripEl.style.opacity = o;
+              } else {
+                path.style.opacity = "0"; path.style.strokeDashoffset = String(L); gripEl.style.opacity = "0";
+              }
+              raf = requestAnimationFrame(frame);
+            }
+            return {
+              start: function () { if (!raf && !reduced) { t0 = null; raf = requestAnimationFrame(frame); } },
+              stop: function () { if (raf) { cancelAnimationFrame(raf); raf = null; } }
+            };
+          }
+
+          function ctrlBrush(stage) {
+            var teeth = '<path d="M88 122 L232 122 Q244 122 244 134 L244 150 Q244 162 232 162 L88 162 Q76 162 76 150 L76 134 Q76 122 88 122 Z" fill="var(--tooth)" stroke="var(--line)" stroke-width="2"></path>' +
+              '<path d="M118 124 L118 160 M160 124 L160 160 M202 124 L202 160" stroke="var(--line)" stroke-width="1.6"></path>';
+            var brush = '<g transform="translate(168,108)"><g class="scrub">' +
+              '<rect x="-102" y="-10" width="17" height="15" rx="3" fill="var(--surface)" stroke="var(--line)" stroke-width="1.6"></rect>' +
+              '<path d="M-99 5 L-99 13 M-93 5 L-93 13 M-87 5 L-87 13" stroke="var(--muted)" stroke-width="2"></path>' +
+              '<rect x="-86" y="-7" width="82" height="10" rx="5" fill="var(--teal)"></rect>' +
+              '<g transform="translate(0,8)">' + gripFist() + "</g></g></g>";
+            stage.innerHTML = svgWrap("0 0 320 200", teeth + brush);
+            stage.classList.add("demo-off");
+            return {
+              start: function () { stage.classList.remove("demo-off"); },
+              stop: function () { stage.classList.add("demo-off"); }
+            };
+          }
+
+          function posePointing(scope) {
+            setT(scope, "d-index", "rotate(0deg)");
+            ["d-middle", "d-ring", "d-pinky"].forEach(function (c) { setT(scope, c, "scaleY(.34) rotate(5deg)"); });
+            setT(scope, "d-thumb", "rotate(26deg) scale(.58)");
+          }
+          function penPart() {
+            return '<g transform="rotate(24)"><rect x="-2.6" y="-54" width="5.2" height="48" rx="2.4" fill="#33424c"></rect><path d="M-2.6 -6 L2.6 -6 L0 2 Z" fill="var(--amber)"></path></g>';
+          }
+          function chain(events, total) {
+            var timers = [], loop = null;
+            function cycle() {
+              events.forEach(function (ev) { timers.push(setTimeout(ev[1], ev[0])); });
+              loop = setTimeout(cycle, total);
+            }
+            return {
+              start: function () { if (loop || reduced) return; cycle(); },
+              stop: function () { timers.forEach(clearTimeout); timers = []; if (loop) { clearTimeout(loop); loop = null; } }
+            };
+          }
+
+          function ctrlCount(labels) {
+            return function (stage) {
+              var label = labels ? '<text class="count-num" x="100" y="24" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="27" font-weight="700" fill="var(--teal)">' + labels[0] + "</text>" : "";
+              stage.innerHTML = svgWrap("0 0 200 224", label + '<g transform="translate(8,24) scale(.92)">' + handInner() + '</g><circle class="contact-ring" r="11"></circle>');
+              var num = stage.querySelector(".count-num");
+              var ring = stage.querySelector(".contact-ring");
+              var seq = ["d-thumb", "d-index", "d-middle", "d-ring", "d-pinky"];
+              var tips = { "d-thumb": [36, 113], "d-index": [74, 65], "d-middle": [92, 55], "d-ring": [109, 63], "d-pinky": [126, 77] };
+              function pose(i) {
+                if (i > seq.length) i = 0;
+                seq.forEach(function (cls, ci) {
+                  var folded = ci < i;
+                  setT(stage, cls, cls === "d-thumb"
+                    ? (folded ? "rotate(26deg) scale(.58)" : "rotate(-32deg)")
+                    : (folded ? "scaleY(.34) rotate(5deg)" : "rotate(0deg)"));
+                });
+                if (num && labels) num.textContent = labels[Math.min(i, labels.length - 1)];
+                if (i >= 1 && i <= seq.length) {
+                  var p = tips[seq[i - 1]];
+                  ring.setAttribute("cx", p[0]); ring.setAttribute("cy", p[1]);
+                  ring.classList.remove("pulse");
+                  void ring.getBoundingClientRect();
+                  ring.classList.add("pulse");
+                }
+              }
+              return stepper(820, seq.length + 2, pose);
+            };
+          }
+
+          function ctrlTapColors(stage) {
+            var CHIP = [
+              { n: "RED", c: "#c93a2e" }, { n: "BLUE", c: "#2266c9" },
+              { n: "GREEN", c: "#1e8a4c" }, { n: "AMBER", c: "#c07f10" }
+            ];
+            var s = '<text class="tap-word" x="160" y="44" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="31" font-weight="700" fill="#c93a2e">BLUE</text>';
+            CHIP.forEach(function (ch, i) {
+              s += '<g><rect x="' + (12 + i * 76) + '" y="140" width="62" height="30" rx="9" fill="' + ch.c + '"></rect>' +
+                '<text x="' + (43 + i * 76) + '" y="159" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="11.5" font-weight="700" fill="#fff" letter-spacing=".04em">' + ch.n + "</text></g>";
+            });
+            s += '<g class="mover"><g transform="translate(160,150) rotate(180) scale(.6)">' + handInner() + "</g></g>";
+            stage.innerHTML = svgWrap("0 0 320 190", s);
+            posePointing(stage);
+            var word = stage.querySelector(".tap-word");
+            var mover = stage.querySelector(".mover");
+            mover.style.transition = "transform .45s ease";
+            var steps = [{ w: 1, ink: 0 }, { w: 0, ink: 2 }, { w: 2, ink: 3 }, { w: 3, ink: 1 }, { w: 0, ink: 3 }];
+            var dxs = [-74, 2, 78, 154];
+            var events = [];
+            steps.forEach(function (st) {
+              var t = steps.indexOf(st) * 1400;
+              events.push([t, function () {
+                word.textContent = CHIP[st.w].n;
+                word.setAttribute("fill", CHIP[st.ink].c);
+                mover.style.transform = "translate(" + dxs[st.ink] + "px,0px)";
+              }]);
+              events.push([t + 620, function () { mover.style.transform = "translate(" + dxs[st.ink] + "px,12px)"; }]);
+              events.push([t + 980, function () { mover.style.transform = "translate(" + dxs[st.ink] + "px,0px)"; }]);
+            });
+            return chain(events, steps.length * 1400 + 300);
+          }
+
+          function ctrlLetters(stage) {
+            var letters = ["Z", "Y", "X", "W", "V", "U"];
+            var s = "";
+            letters.forEach(function (ch, i) {
+              s += '<g class="lchip"><rect x="' + (20 + i * 54) + '" y="140" width="44" height="40" rx="10"></rect>' +
+                '<text x="' + (42 + i * 54) + '" y="167" text-anchor="middle">' + ch + "</text></g>";
+            });
+            s += '<g class="mover"><g transform="translate(176,158) rotate(180) scale(.6)">' + handInner() + "</g></g>";
+            stage.innerHTML = svgWrap("0 0 340 196", s);
+            posePointing(stage);
+            var mover = stage.querySelector(".mover");
+            mover.style.transition = "transform .45s ease";
+            var chips = stage.querySelectorAll(".lchip");
+            var events = [];
+            letters.forEach(function (ch, i) {
+              var t = i * 1250, dx = (42 + i * 54) - 133;
+              events.push([t, function () { mover.style.transform = "translate(" + dx + "px,0px)"; }]);
+              events.push([t + 560, function () { mover.style.transform = "translate(" + dx + "px,10px)"; chips[i].classList.add("on"); }]);
+              events.push([t + 920, function () { mover.style.transform = "translate(" + dx + "px,0px)"; }]);
+            });
+            events.push([letters.length * 1250 + 250, function () { chips.forEach(function (c) { c.classList.remove("on"); }); }]);
+            return chain(events, letters.length * 1250 + 800);
+          }
+
+          function ctrlSwitchback(stage) {
+            var s = '<g class="catchip"><rect x="26" y="20" width="112" height="38" rx="11"></rect><text x="82" y="45" text-anchor="middle">ANIMAL</text></g>' +
+              '<g class="catchip"><rect x="182" y="20" width="112" height="38" rx="11"></rect><text x="238" y="45" text-anchor="middle">FRUIT</text></g>' +
+              '<text class="sb-word" x="160" y="98" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="31" font-weight="700" fill="var(--ink)">cat</text>' +
+              '<g class="mover"><g transform="translate(135,104) scale(.4)">' + handInner() + "</g></g>";
+            stage.innerHTML = svgWrap("0 0 320 196", s);
+            posePointing(stage);
+            var mover = stage.querySelector(".mover");
+            mover.style.transition = "transform .5s ease";
+            var word = stage.querySelector(".sb-word");
+            var chips = stage.querySelectorAll(".catchip");
+            var words = [["cat", 0], ["apple", 1], ["dog", 0], ["pear", 1], ["horse", 0], ["banana", 1]];
+            var dxs = [-82, 74];
+            return stepper(1150, words.length, function (i) {
+              word.textContent = words[i][0];
+              chips.forEach(function (c, ci) { c.classList.toggle("on", ci === words[i][1]); });
+              mover.style.transform = "translate(" + dxs[words[i][1]] + "px,0px)";
+            });
+          }
+
+          function ctrlSticky(stage) {
+            var note = '<g transform="rotate(-3 160 100)"><rect x="70" y="30" width="180" height="140" rx="6" fill="var(--amber-tint)" stroke="var(--amber)" stroke-width="1.6"></rect><circle cx="160" cy="45" r="5" fill="var(--coral)"></circle></g>';
+            var d1 = "M92 84 C 120 74, 150 92, 182 82 C 205 75, 228 88, 244 80";
+            var d2 = "M92 124 C 118 114, 146 132, 176 122 C 200 114, 224 128, 240 120";
+            stage.innerHTML = svgWrap("0 0 320 200", note +
+              '<path class="ink1" d="' + d1 + '" fill="none" stroke="var(--ink-soft)" stroke-width="2.4" stroke-linecap="round"></path>' +
+              '<path class="ink2" d="' + d2 + '" fill="none" stroke="var(--ink-soft)" stroke-width="2.4" stroke-linecap="round"></path>' +
+              '<g class="grip">' + penPart() + gripFist() + "</g>");
+            var p1 = stage.querySelector(".ink1"), p2 = stage.querySelector(".ink2"), gripEl = stage.querySelector(".grip");
+            var L1 = p1.getTotalLength(), L2 = p2.getTotalLength();
+            p1.style.strokeDasharray = String(L1); p1.style.strokeDashoffset = String(L1);
+            p2.style.strokeDasharray = String(L2); p2.style.strokeDashoffset = String(L2);
+            gripEl.style.opacity = "0";
+            var raf = null, t0 = null;
+            function clamp01(v) { return Math.max(0, Math.min(1, v)); }
+            function frame(now) {
+              if (t0 === null) t0 = now;
+              var t = (now - t0) % 4800;
+              var f1 = clamp01((t - 300) / 1600), f2 = clamp01((t - 2100) / 1600);
+              p1.style.strokeDashoffset = String(L1 * (1 - f1));
+              p2.style.strokeDashoffset = String(L2 * (1 - f2));
+              var pt = t < 2100 ? p1.getPointAtLength(f1 * L1) : p2.getPointAtLength(f2 * L2);
+              gripEl.setAttribute("transform", "translate(" + pt.x.toFixed(1) + "," + pt.y.toFixed(1) + ") rotate(-6) scale(1.3)");
+              var o = t < 4100 ? 1 : Math.max(0, 1 - (t - 4100) / 500);
+              p1.style.opacity = String(o); p2.style.opacity = String(o); gripEl.style.opacity = String(o);
+              raf = requestAnimationFrame(frame);
+            }
+            return {
+              start: function () { if (!raf && !reduced) { t0 = null; raf = requestAnimationFrame(frame); } },
+              stop: function () { if (raf) { cancelAnimationFrame(raf); raf = null; } }
+            };
+          }
+
+          function ctrlGesture(stage) {
+            var bubble = '<g><path d="M196 44 h84 a12 12 0 0 1 12 12 v34 a12 12 0 0 1 -12 12 h-58 l-16 14 v-14 h-10 a12 12 0 0 1 -12 -12 v-34 a12 12 0 0 1 12 -12z" fill="var(--surface)" stroke="var(--line)" stroke-width="2"></path>' +
+              '<circle class="edot" cx="218" cy="73" r="5" fill="var(--teal)"></circle>' +
+              '<circle class="edot" cx="238" cy="73" r="5" fill="var(--teal)" style="animation-delay:.2s"></circle>' +
+              '<circle class="edot" cx="258" cy="73" r="5" fill="var(--teal)" style="animation-delay:.4s"></circle></g>';
+            stage.innerHTML = svgWrap("0 0 320 200",
+              '<g transform="translate(96,66) scale(.62)"><g class="bob">' + handInner() + "</g></g>" + bubble);
+            stage.classList.add("demo-off");
+            return {
+              start: function () { stage.classList.remove("demo-off"); },
+              stop: function () { stage.classList.add("demo-off"); }
+            };
+          }
+
+          var builders = {
+            ladder: ctrlLadder, lifts: ctrlLifts, switch: ctrlSwitch, explorer: ctrlExplorer,
+            writing: ctrlWriting, brush: ctrlBrush, sound: ctrlCount(null),
+            sevens: ctrlCount(["100", "93", "86", "79", "72", "65"]),
+            tapcolors: ctrlTapColors, letters: ctrlLetters, switchback: ctrlSwitchback,
+            sticky: ctrlSticky, gesture: ctrlGesture
+          };
+          boxes.forEach(function (box) {
+            var build = builders[box.getAttribute("data-demo")];
+            var stage = box.querySelector(".demo-stage");
+            var btn = box.querySelector(".demo-btn");
+            if (!build || !stage || !btn) return;
+            var ctrl = build(stage);
+            var userPaused = false;
+            function pauseIcon() {
+              btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+              btn.setAttribute("aria-label", "Pause the animation");
+            }
+            function playIcon() {
+              btn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+              btn.setAttribute("aria-label", "Play the animation");
+            }
+            pauseIcon();
+            if (reduced) { btn.style.display = "none"; return; }
+            btn.addEventListener("click", function () {
+              userPaused = !userPaused;
+              if (userPaused) { ctrl.stop(); playIcon(); } else { ctrl.start(); pauseIcon(); }
+            });
+            if ("IntersectionObserver" in window) {
+              new IntersectionObserver(function (entries) {
+                entries.forEach(function (e) {
+                  if (userPaused) return;
+                  if (e.isIntersecting) ctrl.start(); else ctrl.stop();
+                });
+              }, { threshold: 0.2 }).observe(box);
+            } else {
+              ctrl.start();
+            }
+          });
+        })();
+
+        /* ================= experiment 1: finger sequence ================= */
+        (function () {
+          var pads = Array.prototype.slice.call(document.querySelectorAll("#pads .pad"));
+          var startBtn = document.getElementById("seq-start");
+          var msg = document.getElementById("seq-msg");
+          var readout = document.getElementById("seq-readout");
+          var prog = document.getElementById("seq-progress");
+          var names = ["Thumb", "Index", "Middle", "Ring", "Pinky"];
+          if (!pads.length || !startBtn) return;
+          var seq = [], step = 0, roundLen = 3, best = 0, rounds = 0, accepting = false, playing = false, failed = false;
+          function updateReadout() {
+            readout.innerHTML = "Best sequence so far: <b>" + best + "</b> · Rounds played: <b>" + rounds + "</b>";
+          }
+          function drawProgress(state) {
+            prog.innerHTML = "";
+            seq.forEach(function (_, i) {
+              var s = document.createElement("span");
+              if (state === "input" && i < step) s.className = "hit";
+              prog.appendChild(s);
+            });
+          }
+          function light(i, ms, cb) {
+            pads[i].classList.add("lit");
+            window.setTimeout(function () { pads[i].classList.remove("lit"); if (cb) cb(); }, ms);
+          }
+          function playSeq(i) {
+            if (i >= seq.length) {
+              playing = false; accepting = true; step = 0; drawProgress("input");
+              msg.textContent = "Your turn — tap the " + seq.length + " fingers back in order.";
+              return;
+            }
+            window.setTimeout(function () { light(seq[i], 430, function () { playSeq(i + 1); }); }, i === 0 ? 350 : 130);
+          }
+          startBtn.addEventListener("click", function () {
+            if (playing) return;
+            seq = [];
+            for (var i = 0; i < roundLen; i++) seq.push(Math.floor(Math.random() * 5));
+            rounds++; updateReadout();
+            accepting = false; playing = true; failed = false; drawProgress("show");
+            msg.textContent = "Watch the pads — a " + roundLen + "-finger sequence is coming. Memorize the order, not just the fingers.";
+            startBtn.textContent = "Playing…";
+            playSeq(0);
+            window.setTimeout(function () { if (!failed) startBtn.textContent = "Start round " + (rounds + 1); }, 600 + seq.length * 620);
+          });
+          pads.forEach(function (pad) {
+            pad.addEventListener("click", function () {
+              if (!accepting || playing) return;
+              var f = parseInt(pad.getAttribute("data-f"), 10);
+              if (f === seq[step]) {
+                pad.classList.add("good");
+                window.setTimeout(function () { pad.classList.remove("good"); }, 220);
+                step++; drawProgress("input");
+                if (step === seq.length) {
+                  accepting = false;
+                  best = Math.max(best, seq.length); updateReadout();
+                  var cleared = roundLen;
+                  roundLen = Math.min(9, roundLen + 1);
+                  msg.textContent = cleared >= 5
+                    ? "Full sequence — " + cleared + " steps, clean. Round one probably felt harder than this did. Same brain, better wiring: that's the whole page in one minute."
+                    : "Clean round! Notice how the last two taps needed less thinking than the first two. Next round adds one more finger.";
+                  startBtn.textContent = "Start round " + (rounds + 1) + " — " + roundLen + " fingers";
+                }
+              } else {
+                pad.classList.add("bad");
+                window.setTimeout(function () { pad.classList.remove("bad"); }, 300);
+                accepting = false; failed = true;
+                best = Math.max(best, step); updateReadout();
+                msg.textContent = "That tap was the " + names[f] + " — the sequence wanted the " + names[seq[step]] + ". You held " + step + " of " + seq.length + ". Errors are information, not failure: press start and run it again while it's fresh.";
+                startBtn.textContent = "Try round " + rounds + " again";
+              }
+            });
+          });
+        })();
+
+        /* ================= experiment 2: stroop ================= */
+        (function () {
+          var wordEl = document.getElementById("stroop-word");
+          var startBtn = document.getElementById("stroop-start");
+          var readout = document.getElementById("stroop-readout");
+          var msg = document.getElementById("stroop-msg");
+          var btns = Array.prototype.slice.call(document.querySelectorAll("#stroop-btns button"));
+          if (!wordEl || !startBtn) return;
+          var COLORS = [
+            { name: "RED", cls: "c-red", key: "red" },
+            { name: "BLUE", cls: "c-blue", key: "blue" },
+            { name: "GREEN", cls: "c-green", key: "green" },
+            { name: "AMBER", cls: "c-amber", key: "amber" }
+          ];
+          var trial = 0, errors = 0, current = null, t0 = 0, running = false, bestTime = null;
+          function next() {
+            trial++;
+            var wi = Math.floor(Math.random() * 4), ii = wi;
+            if (Math.random() < .75) { while (ii === wi) ii = Math.floor(Math.random() * 4); }
+            current = COLORS[ii];
+            wordEl.textContent = COLORS[wi].name;
+            wordEl.className = "stroop-word " + COLORS[ii].cls;
+            readout.innerHTML = "Round: <b>" + trial + "</b> / 10 · Errors: <b>" + errors + "</b>";
+          }
+          startBtn.addEventListener("click", function () {
+            trial = 0; errors = 0; running = true; t0 = performance.now();
+            startBtn.textContent = "Restart";
+            msg.textContent = "Tap the INK color. Ignore what the word says — it will lie to you with a straight face.";
+            next();
+          });
+          btns.forEach(function (b) {
+            b.addEventListener("click", function () {
+              if (!running || !current) return;
+              if (b.getAttribute("data-c") !== current.key) {
+                errors++;
+                readout.innerHTML = "Round: <b>" + trial + "</b> / 10 · Errors: <b>" + errors + "</b>";
+                return;
+              }
+              if (trial >= 10) {
+                running = false;
+                var secs = ((performance.now() - t0) / 1000).toFixed(1);
+                var verdict = errors === 0 ? "flawless" : errors <= 2 ? "sharp" : "human — the effect got you a few times, as designed";
+                var compare = "";
+                if (bestTime !== null) {
+                  var diff = (bestTime - parseFloat(secs)).toFixed(1);
+                  compare = diff > 0 ? " That's " + diff + "s faster than your previous run — adaptation, measured." :
+                    diff < 0 ? " Slightly slower than your best (" + bestTime.toFixed(1) + "s) — fatigue and variance are real too." :
+                    " Identical to your best. Spooky.";
+                }
+                if (bestTime === null || parseFloat(secs) < bestTime) bestTime = parseFloat(secs);
+                msg.innerHTML = "Done: <b>" + secs + "s</b>, " + errors + " error" + (errors === 1 ? "" : "s") + " — " + verdict + "." + compare + " Run it once more and watch the override get cheaper.";
+                wordEl.textContent = "Finished";
+                wordEl.className = "stroop-word";
+                readout.innerHTML = "Best time: <b>" + bestTime.toFixed(1) + "s</b>";
+                return;
+              }
+              next();
+            });
+          });
+        })();
+
+        /* ================= experiment 3: backwards alphabet ================= */
+        (function () {
+          var grid = document.getElementById("alpha-grid");
+          var nextEl = document.getElementById("alpha-next");
+          var readout = document.getElementById("alpha-readout");
+          var msg = document.getElementById("alpha-msg");
+          var resetBtn = document.getElementById("alpha-reset");
+          if (!grid) return;
+          var expected = 25, errors = 0, t0 = null, bestTime = null, btnMap = {};
+          "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").forEach(function (ch, i) {
+            var b = document.createElement("button");
+            b.type = "button"; b.textContent = ch; b.setAttribute("data-i", i);
+            grid.appendChild(b); btnMap[i] = b;
+            b.addEventListener("click", function () {
+              if (expected < 0) return;
+              if (t0 === null) { t0 = performance.now(); msg.textContent = "Clock's running. Z, Y, X…"; }
+              if (i === expected) {
+                b.classList.add("got"); b.classList.remove("wrong");
+                expected--;
+                var done = 25 - expected;
+                readout.innerHTML = "Progress: <b>" + done + "</b> / 26 · Errors: <b>" + errors + "</b>";
+                if (expected < 0) {
+                  var secs = ((performance.now() - t0) / 1000).toFixed(1);
+                  var compare = "";
+                  if (bestTime !== null) {
+                    var diff = (bestTime - parseFloat(secs)).toFixed(1);
+                    compare = diff > 0 ? " You cut " + diff + " seconds off your previous run — same alphabet, rebuilt retrieval." :
+                      " Your best stands at " + bestTime.toFixed(1) + "s. One more run usually takes it back.";
+                  }
+                  if (bestTime === null || parseFloat(secs) < bestTime) bestTime = parseFloat(secs);
+                  nextEl.innerHTML = "Alphabet: <b>reversed.</b>";
+                  msg.innerHTML = "Finished in <b>" + secs + "s</b> with " + errors + " error" + (errors === 1 ? "" : "s") + "." + compare + " Hit restart and go again right now, while the new pathway is warm.";
+                } else {
+                  nextEl.innerHTML = "Next letter: <b>" + String.fromCharCode(65 + expected) + "</b>";
+                }
+              } else {
+                errors++;
+                b.classList.add("wrong");
+                window.setTimeout(function () { b.classList.remove("wrong"); }, 300);
+                readout.innerHTML = "Progress: <b>" + (25 - expected) + "</b> / 26 · Errors: <b>" + errors + "</b>";
+              }
+            });
+          });
+          function reset() {
+            expected = 25; errors = 0; t0 = null;
+            Object.keys(btnMap).forEach(function (k) { btnMap[k].classList.remove("got", "wrong"); });
+            nextEl.innerHTML = "First letter: <b>Z</b>";
+            readout.innerHTML = "Progress: <b>0</b> / 26 · Errors: <b>0</b>";
+            msg.textContent = bestTime !== null
+              ? "Best so far: " + bestTime.toFixed(1) + "s. Beat it while the pathway is warm."
+              : "Your timer starts on your first tap.";
+          }
+          resetBtn.addEventListener("click", reset);
+        })();
+
+        /* ================= lazy video embeds ================= */
+        (function () {
+          var frames = document.querySelectorAll(".vid-frame[data-embed]");
+          function mount(frame) {
+            if (frame.getAttribute("data-mounted")) return;
+            frame.setAttribute("data-mounted", "1");
+            var src = frame.getAttribute("data-embed");
+            var ifr = document.createElement("iframe");
+            ifr.src = src.indexOf("youtube") > -1 ? src + "?rel=0" : src;
+            ifr.setAttribute("sandbox", "allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox");
+            ifr.setAttribute("referrerpolicy", "no-referrer");
+            ifr.setAttribute("loading", "lazy");
+            ifr.setAttribute("allow", "accelerometer; autoplay; encrypted-media; picture-in-picture; fullscreen");
+            ifr.setAttribute("allowfullscreen", "");
+            ifr.title = "Embedded video player";
+            frame.innerHTML = "";
+            frame.appendChild(ifr);
+          }
+          if ("IntersectionObserver" in window) {
+            var io = new IntersectionObserver(function (entries) {
+              entries.forEach(function (e) { if (e.isIntersecting) { mount(e.target); io.unobserve(e.target); } });
+            }, { rootMargin: "400px 0px" });
+            frames.forEach(function (f) { io.observe(f); });
+          } else {
+            frames.forEach(mount);
+          }
+        })();
+      })();
+    </script>
+  </body>
+</html>
